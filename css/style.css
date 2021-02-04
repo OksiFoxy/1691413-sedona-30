@@ -1,0 +1,38 @@
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-dark-black: #333333;
+  --basic-orign-black:#231F20;
+  --basic-white: #ffffff;
+
+
+  --basic-brown-light: #766357;
+  --basic-brown:  #604E43;
+  --basic-brown:  #503E33;
+
+
+  --basic-gray-very-light: #F2F2F2;
+  --basic-gray-very-light-light:#EBEBEB;
+  --basic-graylight: #ABABAB;
+  --basic-graylight-opal:#BDBBBC;
+  --basic-graylight-original: #EEEEEE;
+  --basic-gray-light: #A9A9A9;
+  --basic-graylight-white:#CACACA;
+  --basic-gray: #6A6A6A;
+  --basic-gray-dark: #666666;
+
+
+
+  --basic-blue-light: #81B3D2;
+  --basic-blue: #81B3D2;
+  --basic-blue-skay: #669EC0;
+  --basic-blue-dark: #5496BD;
+
+
+
+
+
+
+
+}
