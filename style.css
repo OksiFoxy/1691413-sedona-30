@@ -1,0 +1,303 @@
+
+body {
+  width: 1200px;
+  min-width: 100%;
+  margin-top: 0px;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--basic-black);
+  text-align: center;
+  /* text-transform: uppercase; */
+  background-color: var(--basic-gray-back);
+  background-image: url("");
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  /* min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start; */
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* Цвета */
+:root {
+  --basic-black: #000000;
+  --basic-dark-black: #333333;
+  --basic-orign-black:#231F20;
+  --basic-white: #ffffff;
+
+  --basic-brown-light: #766357;
+  --basic-brown:  #604E43;
+  --basic-brown-dark:  #503E33;
+
+  --basic-gray-very-light: #F2F2F2;
+  --basic-gray-very-light-light:#EBEBEB;
+  --basic-graylight: #ABABAB;
+  --basic-graylight-opal:#BDBBBC;
+  --basic-graylight-original: #EEEEEE;
+  --basic-gray-light: #A9A9A9;
+  --basic-graylight-white:#CACACA;
+  --basic-gray: #6A6A6A;
+  --basic-gray-dark: #666666;
+  --basic-gray-back: #888888;
+
+  --basic-blue-light: #81B3D2;
+  --basic-blue: #81B3D2;
+  --basic-blue-skay: #669EC0;
+  --basic-blue-dark: #5496BD;
+}
+/* Навигация */
+.main-navigation {
+  height: 70px;
+  width: 1200px;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+.site-navigation {
+  list-style: none;
+  display: block;
+  column-count: 4;
+  margin-top: 0px;
+  padding-top: 15px;
+  padding-left: 72px;
+  padding-right: 72px ;
+  text-decoration: none;
+}
+
+.site-navigation li:first-child(1) {
+ }
+.site-navigation li:nth-child(2){
+}
+.site-navigation li:nth-child(3){
+}
+.site-navigation a:last-child(4) {
+}
+
+/* Состояния ссылок-Навигация */
+.site-navigation a:link {
+  color: var(--basic-black);
+}
+ .site-navigation a:visited {
+  color: var(--basic-brown-light);
+}
+.site-navigation a:hover {
+  color: var(--basic-blue-light);
+}
+.site-navigation a:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+/* Состояния ссылок-Форма поиска гостинницы-Шапка */
+.search-hostel-title:hover {
+  color: var(--basic-white);
+  background-color: var(--basic-brown);
+}
+.search-hostel-title:active {
+  color: var(--basic-white);
+  opacity: 0.3;
+  background-color: var(--basic-brown-dark);
+}
+.search-hostel-form {
+  background-color: var(--basic-white);
+}
+
+ /* Логотип на фоне*/
+.logo-index {
+  width: 1200px;
+  height: 509px;
+  background: url(img/background_photo.jpg);
+}
+.logo-welcome {
+  width: 456.65px;
+  height: 350.88px;
+  margin-top: 77.35px;
+  text-align: center;
+}
+/* Преимущества */
+.about-city {
+  width: 1200px;
+  height: 216px;
+  background-color: var(--basic-white);
+  margin-top: 0px;
+  padding-top: 42.5px;
+}
+.about-city p:nth-child(1) {
+  width: 470px;
+  height: 80px;
+  margin-top: 0px;
+  margin-left: 365px;
+  margin-right: 365px;
+  margin-bottom: 16.5px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.about-city p:nth-child(2) {
+  width: 512px;
+  height: 26px;
+
+  margin-top: 0px;
+  margin-bottom: 51px;
+  margin-left: 340px;
+  margin-right: 341px;
+}
+/* Разделы с преимуществами */
+.features-list {
+  width: 1200px;
+  margin-left: -40px;
+  list-style: none;
+}
+.features-list li:nth-child(1) {
+  background-color: var(--basic-blue-light);
+}
+.features-list li:nth-child(2) {
+  background-color: var(--basic-white);
+}
+.features-list li:nth-child(3) {
+  background-color: var(--basic-white);
+}
+.features-list li:nth-child(4) {
+  background-color: var(--basic-white);
+}
+.features-list li:nth-child(5) {
+  background-color: var(--basic-blue-light);
+}
+.features-list li:nth-child(6) {
+  background-color: var(--basic-graylight-original);
+}
+.features-list li:nth-child(7) {
+  background-color: var(--basic-graylight-original);
+}
+.features-list li:nth-child(8) {
+  background-color: var(--basic-graylight-original);
+}
+.feature-item h2 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+.feature-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+.interest {
+  width: 1200px;
+  height: 291px;
+  background-color: var(--basic-white);
+  margin-top: 0px;
+}
+.interest-title {
+  width: 297px;
+  height: 24px;
+  margin-left: 446px;
+  padding-top: 58px;
+  margin-top: 0px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+}
+.interest-text {
+  width: 435px;
+  height: 95px;
+  margin-left: 383px;
+  margin-right: 382px;
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+/* Форма поиска */
+.search-hostel-title {
+  width: 568px;
+  height: 86px;
+
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-white);
+  background-color: var(--basic-brown-light);
+  margin-top: -86px;
+  margin-left: 316px;
+  margin-right: 316px;
+}
+.search-hostel-form {
+  width: 568px;
+  height: 395px;
+  background-color: var(--basic-white);
+  font-weight: 700;
+}
+.search-hostel-form button {
+  width: 458px;
+  height: 58px;
+  border: 0px;
+  font-size: 21px;
+  font-weight: 700;
+  color: white;
+}
+.map {
+  width: 1200px;
+}
+
+/* Подвал */
+.main-footer {
+  width: 1200px;
+  height: 120px;
+  margin-bottom: 0px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+.footer-contacts {
+  font-size: 21px;
+  font-weight: 700;
+}
+.social-list {
+  list-style: none;
+}
+.social-list li:hover {
+  background-color: var(--basic-blue-skay);
+}
+.social-list li:active {
+  background-color: var(--basic-blue-dark);
+}
+.social-button {
+  width: 46px;
+  height: 48px;
+  color: var(--basic-white);
+  background-color: var(--basic-blue-light);
+}
+.search-hostel-form button {
+  background-color: var(--basic-blue);
+}
+.search-hostel-form button:hover {
+  background-color: var(--basic-blue-skay);
+}
+.search-hostel-form button:active {
+  background-color: var(--basic-blue-dark);
+}
+
+.footer-copyright a:hover {
+  width: 74px;
+  margin-right: 8px;
+.footer-copyright a:hover {
+  color: var(--basic-blue);
+}
+
+
+.footer-copyright a:active

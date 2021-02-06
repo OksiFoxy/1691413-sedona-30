@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html  class="page" lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="normalize.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
@@ -19,25 +20,23 @@
 <body class="page-body">
   <header class="main-header">
     <nav class="main-navigation">
-      <section>
-        <a class="main-header-logo" href="#">
+      <div class="main-navigation-wrapper">
+          <ul class="site-navigation">
+            <li><a href="blank.html">Информация</a></li>
+            <li><a href="blank.html">Фото и видео</a></li>
+            <li><a href="blank.html">Карта штата</a></li>
+            <li><a href="catalog.html">Гостиницы</a></li>
+          </ul>
+        <a class="main-header-logo" href="index.html">
           <img src="img/logo-sedona.svg" width="170" height="70" alt="Логотип городка Седона">
         </a>
-      </section>
-      <section>
-        <ul class="site-navigation">
-          <li><a href="blank.html">Информация</a></li>
-          <li><a href="blank.html">Фото и видео</a></li>
-          <li><a href="blank.html">Карта штата</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
-        </ul>
-      </section>
+      </div>
     </nav>
-  </header>
 
+  </header>
   <main class="container">
-    <h1>Каталог гостинниц городка Седона</h1>
-    <h2>Фильтр товаров</h2>
+    <!-- <h1>Каталог гостинниц городка Седона</h1> Скрыть-->
+    <!-- <h2>Фильтр товаров</h2> -->
     <form method="get" action="https://echo.htmlacademy.ru">
       <fieldset class="hostel-infrastructure">
         <legend>Инфраструктура:</legend>
@@ -176,21 +175,31 @@
       <p>#visitSEDONA</p>
       <p class="contacts-phone">ТЕЛ: +7(495) 666-01-66</p>
     </section>
-    <section class="footer-social">
-      <h2>Странички городка в социальных сетях</h2>
-      <ul>
-        <li><a class="social-button" href="https://twitter.com/home">Твиттер городка Седона</a>
+    <section >
+      <ul class="social">
+        <li class="social-button">
+          <a href="https://twitter.com/home">
+            <img src="img/logo-twitter.png" width="16.98" height="15.01" alt="Перейти на Твиттер Седоны">
+          </a>
         </li>
-        <li><a class="social-button" href="https://www.facebook.com/">Фейсбук городка Седона</a>
+        <li class="social-button">
+          <a href="https://www.facebook.com">
+            <img src="img/logo-facebook.png" width="12" height="22" alt="Перейти на Фейсбук Седоны">
+          </a>
         </li>
-        <li><a class="social-button" href="https://www.youtube.com/">Ютуб городка Седона</a>
+        <li class="social-button">
+          <a href="https://www.youtube.com">
+            <img src="img/logo-youtube.png" width="20" height="16" alt="Перейти на Ютуб Седоны">
+          </a>
         </li>
       </ul>
     </section>
     <p class="footer-copyright">Website by
       <a href="https://htmlacademy.ru/">
-        <img src="img/logo-htmlacademy.svg" alt="Логотип Академии"></a>
+        <img src="img/logo-htmlacademy.svg" alt="Логотип Академии">
+      </a>
     </p>
   </footer>
 </body>
 </html>
+
