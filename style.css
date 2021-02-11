@@ -1,5 +1,5 @@
 
-body {
+.page-body {
   width: 1200px;
   margin-top: 0px;
   margin-left: 40px;
@@ -7,21 +7,17 @@ body {
   padding: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 21px;
   font-weight: 400;
   font-style: normal;
+  text-transform: uppercase;
   color: var(--basic-black);
   text-align: center;
-  /* text-transform: uppercase; */
+
   background-color: var(--basic-gray-back);
   background-image: url("");
   background-position: top center;
   background-repeat: no-repeat;
-
-  /* min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start; */
 }
 a {
   text-decoration: none;
@@ -62,7 +58,6 @@ img {
   height: 70px;
   width: 1200px;
   font-family: PT Sans;
-  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 26px;
@@ -80,14 +75,14 @@ img {
   text-decoration: none;
 }
 
-.site-navigation li:first-child(1) {
+/* .site-navigation li:first-child(1) {
  }
 .site-navigation li:nth-child(2){
 }
 .site-navigation li:nth-child(3){
 }
 .site-navigation a:last-child(4) {
-}
+} */
 
 /* Состояния ссылок-Навигация */
 .site-navigation a:link {
@@ -115,6 +110,7 @@ img {
 }
 .search-hostel-form {
   background-color: var(--basic-white);
+  opacity: 0.3;
 }
 
  /* Логотип на фоне*/
@@ -187,14 +183,12 @@ img {
 .features-list li:nth-child(8) {
   background-color: var(--basic-graylight-original);
 }
-.feature-item h2 {
+.feature-list h2 {
   font-size: 21px;
-  line-height: 21px;
   font-weight: 700;
 }
-.feature-item h3 {
+.feature-list h3 {
   font-size: 21px;
-  line-height: 21px;
   font-weight: 700;
 }
 .interest {
@@ -220,7 +214,6 @@ img {
   margin-left: 383px;
   margin-right: 382px;
   margin-top: 4px;
-  font-size: 14px;
 }
 
 /* Форма поиска */
@@ -283,6 +276,8 @@ img {
 .social-list li:active {
   background-color: var(--basic-blue-dark);
 }
+
+/* Кнопка найти */
 .social-button {
   width: 46px;
   height: 48px;
@@ -297,6 +292,7 @@ img {
 }
 .search-hostel-form button:active {
   background-color: var(--basic-blue-dark);
+  opacity: 0.3;
 }
 
 .footer-copyright a:hover {
@@ -306,6 +302,118 @@ img {
 .footer-copyright a:hover {
   color: var(--basic-blue);
 }
-
-
 .footer-copyright a:active
+
+/* КАТАЛОГ */
+
+.hostel-lost {
+  height: 217px;
+  width: 1200px;
+  left: 40px;
+  top: 56px;
+  background: url(/img/background_photo.jpg);
+}
+/* Почему блок не видно? */
+.hostel-form {
+  color: var(--basic-white);
+}
+.hostel-form ul {
+  list-style: none;
+}
+.titleform {
+  font-size: 16px;
+  font-weight: 700;
+}
+.filter {
+
+}
+.show {
+  width: 137px;
+  height: 37px;
+  color: var(--basic-white);
+  border: 1px solid #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.sorting {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  background-color: var(--basic-white);
+}
+.sorting p {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.sorting ul {
+  list-style: none;
+}
+.sorting a {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+.sorting a:visited {
+  color: var( --basic-blue-light);
+}
+/* Раздел с результатами отелей */
+.hostel {
+  background-color: var(--basic-white);
+}
+/* Имя отеля */
+.hostel-name {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+.hostel-name:link {
+  color: var(--basic-black);
+}
+.hostel-name:hover {
+  color: var(--basic-blue-light);
+}
+.hostel-name:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+/* Кнопка подробнее */
+.details {
+  width: 110px;
+  height: 27px;
+  color: var(--basic-white);
+  background-color: var(--basic-blue-light);
+}
+.details button {
+  background-color: var(--basic-blue);
+}
+.details:hover {
+  background-color: var(--basic-blue-skay);
+}
+.details:active {
+  background-color: var(--basic-blue-dark);
+  opacity: 0.3;
+}
+
+/* Забронировать */
+.to-book {
+  width: 142px;
+  height: 27px;
+  color: var(--basic-white);
+  background-color: var(--basic-brown-light);
+}
+.to-book:hover {
+  color: var(--basic-white);
+  background-color: var(--basic-brown);
+}
+.to-book:active {
+  color: var(--basic-white);
+  opacity: 0.3;
+  background-color: var(--basic-brown-dark);
+}
+.rating {
+  width: 110px;
+  height: 27px;
+  background-color: var(--basic-gray-very-light);
+}
