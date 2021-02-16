@@ -17,15 +17,16 @@
   <link rel="manifest" href="/site.webmanifest">
 </head>
 
-<body class="page-body inner-page">
-  <header class="main-header">
+<body class="page-body">
+  <header class="main-header wrapper">
     <nav class="main-navigation">
-      <div class="main-navigation-wrapper">
+      <div class="">
+        <!-- class="main-navigation-wrapper" -->
           <ul class="site-navigation">
-            <li><a href="blank.html">Информация</a></li>
-            <li><a href="blank.html">Фото и видео</a></li>
-            <li><a href="blank.html">Карта штата</a></li>
-            <li><a href="catalog.html">Гостиницы</a></li>
+            <li><a href="blank.html">информация</a></li>
+            <li><a href="blank.html">фото и видео</a></li>
+            <li><a href="blank.html">карта штата</a></li>
+            <li><a href="catalog.html">гостиницы</a></li>
           </ul>
         <a class="main-header-logo" href="index.html">
           <img src="img/logo-sedona.svg" width="170" height="70" alt="Логотип городка Седона">
@@ -35,7 +36,9 @@
 
   </header>
 
-  <main>
+  </header>
+
+  <main class="wrapper">
     <!-- <h1>Каталог гостинниц городка Седона</h1> Скрыть-->
     <section class="hostel-lost"></section>
     <!-- <h2>Фильтр товаров</h2> -->
@@ -77,8 +80,8 @@
       </fieldset>
       <fieldset class="hostel-price">
         <legend class="titleform">Стоимость в сутки (Р):</legend>
-         <input type="text" name="hostel-price-min">
-          <input type="text" name="hostel-price-max">
+         <input type="number" name="hostel-price-min">
+          <input type="number" name="hostel-price-max">
           <div class="range-slider">
           <!--Наложить друг на друга?-->
           <input type="range" name="hostel-price-min-scroll" min="0" step="1" max="3000" value="1">
@@ -172,7 +175,7 @@
       </article>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer wrapper">
     <!-- <h2>Контактная информация</h2>Скрыть -->
     <p>#visitSEDONA</p>
     <p class="contacts-phone">ТЕЛ: +7(495) 666-01-66</p>
