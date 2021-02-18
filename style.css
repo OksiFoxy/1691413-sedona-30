@@ -3,8 +3,6 @@
 }
 .page-body {
   margin-top: 0px;
-  margin-left: 40px;
-  margin-right: 40px;
   padding: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
@@ -15,14 +13,14 @@
   color: var(--basic-black);
   text-align: center;
 
-  background-color: var(--basic-gray-back);
+  background-color: var(--basic-white);
   background-image: url("");
   background-position: top center;
   background-repeat: no-repeat;
 
   min-height: 100%;
   display: grid;
-  grid-template-rows: 70px 1fr 120px;
+  grid-template-rows: min-content 1fr min-content;
   align-content: start;
 }
 .wrapper {
@@ -65,9 +63,6 @@ img {
   --basic-blue-dark: #5496BD;
 }
 /* Навигация */
-.main-header-bar {
-
-}
 .main-navigation {
   height: 70px;
   font-family: PT Sans;
@@ -77,35 +72,38 @@ img {
   color: var(--basic-black);
   background-color: var(--basic-white);
 
-  display: grid;
   position: relative;
+
 }
 .site-navigation {
   list-style: none;
   margin: 0;
-
   padding: 0;
-  padding-top: 15px;
   text-decoration: none;
+
   display: grid;
-  grid-template-columns: 200px 200px 400px 200px 200px;
+  grid-template-columns: 73px 127px 200px 200px 200px 200px 127px 73px;
+  grid-template-rows: 56px;
+
 }
 .main-header-logo {
   margin-top: 0;
-
-
 }
-.site-navigation li:first-child(1) {
-  grid-column: 1/2;
- }
-.site-navigation li:nth-child(2){
+.nav-inform {
+  padding-top: 15px;
   grid-column: 2/3;
+ }
+.nav-photo {
+  padding-top: 15px;
+  grid-column: 3/4;
 }
-.site-navigation li:nth-child(3){
-  grid-column: 4/5;
+.nav-maps {
+  padding-top: 15px;
+  grid-column: 6/7;
 }
-.site-navigation a:last-child(4) {
-  grid-column: 5/6;
+.nav-hostels {
+  padding-top: 15px;
+  grid-column: 7/8;
 }
 
 /* Состояния ссылок-Навигация */
@@ -122,25 +120,12 @@ img {
   color: var(--basic-black);
   opacity: 0.3;
 }
-/* Состояния ссылок-Форма поиска гостинницы-Шапка */
-.search-hostel-title:hover {
-  color: var(--basic-white);
-  background-color: var(--basic-brown);
-}
-.search-hostel-title:active {
-  color: var(--basic-white);
-  opacity: 0.3;
-  background-color: var(--basic-brown-dark);
-}
-.search-hostel-form {
-  background-color: var(--basic-white);
-  opacity: 0.3;
-}
 
  /* Логотип на фоне*/
 .logo-index {
   height: 509px;
   background: url(img/background_photo.jpg);
+  justify-self: center;
 }
 .logo-welcome {
   width: 456.65px;
@@ -185,6 +170,7 @@ img {
   grid-template-rows: 256px 330px 256px 256px ;
 }
 .features-list li:nth-child(1) {
+  color: var(--basic-white);
   background-color: var(--basic-blue-light);
   grid-column: 1/4;
   display: grid;
@@ -200,6 +186,7 @@ img {
   background-color: var(--basic-white);
 }
 .features-list li:nth-child(5) {
+
   background-color: var(--basic-blue-light);
   grid-column: 1/4;
   display: grid;
@@ -214,14 +201,28 @@ img {
 .features-list li:nth-child(8) {
   background-color: var(--basic-graylight-original);
 }
-.feature-list h2 {
+.features-list h2 {
   font-size: 21px;
   font-weight: 700;
+  margin-top: 47px;
 }
-.feature-list h3 {
+.features-list h3 {
   font-size: 21px;
   font-weight: 700;
+  margin-top: 47px;
 }
+.features-list h3:nth-child(2) {
+  margin-top: 28px;
+}
+.features-list h3:nth-child(3) {
+  margin-top: 29px;
+}
+.features-list h3:nth-child(4) {
+  margin-top: 28px;
+}
+/* .features-list p {
+
+} */
 .interest {
   height: 291px;
   background-color: var(--basic-white);
@@ -256,9 +257,21 @@ img {
   color: var(--basic-white);
   background-color: var(--basic-brown-light);
   margin-top: -86px;
-
-
+  position: relative;
 }
+.search-hostel-title:hover {
+  color: var(--basic-white);
+  background-color: var(--basic-brown);
+}
+.search-hostel-title:active {
+  color: var(--basic-white);
+  opacity: 0.3;
+  background-color: var(--basic-brown-dark);
+}
+.search-hostel-form {
+  background-color: var(--basic-white);
+}
+
 .search-hostel-form {
   width: 568px;
   height: 395px;
@@ -279,17 +292,15 @@ img {
 }
 .map {
   margin-bottom: -120px;
+
 }
 
 /* Подвал */
 .main-footer {
-  width: 1200px;
   height: 120px;
 
   color: var(--basic-black);
   background-color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 0px;
-  padding-bottom: 0px;
   background-position: 0 0;
   display: grid;
   grid-template-columns: 400px 400px 400px;
@@ -300,8 +311,28 @@ img {
   font-weight: 700;
 }
 .social-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: 125px 46px 46px 46px 125px;
+  grid-template-rows: 36px 1fr 36px;
+  gap: 6px;
 }
+.social-list li.fb {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.social-list li.twitter {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.social-list li.youtube{
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+
 .social-list li:hover {
   background-color: var(--basic-blue-skay);
 }
@@ -334,31 +365,48 @@ img {
 .footer-copyright a:hover {
   color: var(--basic-blue);
 }
-.footer-copyright a:active
+/* .footer-copyright a:active */
 
 /* КАТАЛОГ */
 
-.hostel-lost {
-  height: 217px;
-  width: 1200px;
-  left: 40px;
-  top: 56px;
-  background: url(/img/background_photo.jpg);
-}
-/* Почему блок не видно? */
-.hostel-form {
+/* .hostel-filter {
+} */
+/* Почему блок не видно, но фон след видно только с ним? */
+.hostel-catalog {
+  background: url(img/background.jpg);
   color: var(--basic-white);
+  display: grid;
+  grid-template-columns: 73px 127px 200px 200px 200px 200px 127px 73px;
+  grid-template-rows: 217px ;
 }
-.hostel-form ul {
+.hostel-infrastructure {
+  text-align: start;
+  grid-column: 2/3;
+}
+.hostel-infrastructure ul {
+  padding-left: 0;
+}
+.hostel-type {
+  grid-column: 3/5;
+}
+.hostel-type ul {
+  text-align: start;
+  padding-left: 135px;
+}
+.hostel-price {
+  grid-column: 6/8;
+}
+.hostel-catalog ul {
   list-style: none;
+
 }
 .titleform {
   font-size: 16px;
   font-weight: 700;
 }
-.filter {
+/* .filter {
 
-}
+} */
 .show {
   width: 137px;
   height: 37px;
@@ -367,6 +415,7 @@ img {
   text-align: center;
   text-transform: uppercase;
 }
+/* Сортировка */
 .sorting {
   font-size: 12px;
   line-height: 18px;
@@ -381,17 +430,29 @@ img {
 .sorting ul {
   list-style: none;
 }
-.sorting a {
+.sorting a:link {
   color: var(--basic-black);
   opacity: 0.3;
+}
+.sorting a:hover {
+  color: var(--basic-blue-light);
+}
+.sorting a:active {
+  color: var(--basic-black);
 }
 .sorting a:visited {
   color: var( --basic-blue-light);
 }
 /* Раздел с результатами отелей */
-.hostel {
+.hostels-list {
   background-color: var(--basic-white);
+  display: grid;
+  grid-template-columns: 1200px;
+  grid-template-rows: 1fr 1fr 1fr;
 }
+/* .hostel {
+
+} */
 /* Имя отеля */
 .hostel-name {
   font-size: 21px;
@@ -417,10 +478,12 @@ img {
   color: var(--basic-white);
   background-color: var(--basic-blue-light);
 }
-.details button {
+.details:link {
+  color: var(--basic-white);
   background-color: var(--basic-blue);
 }
 .details:hover {
+  color: var(--basic-white);
   background-color: var(--basic-blue-skay);
 }
 .details:active {
@@ -435,14 +498,18 @@ img {
   color: var(--basic-white);
   background-color: var(--basic-brown-light);
 }
+.to-book:link {
+  color: var(--basic-white);
+  background-color: var(--basic-brown-light);
+}
 .to-book:hover {
   color: var(--basic-white);
   background-color: var(--basic-brown);
 }
 .to-book:active {
   color: var(--basic-white);
-  opacity: 0.3;
   background-color: var(--basic-brown-dark);
+  opacity: 0.3;
 }
 .rating {
   width: 110px;

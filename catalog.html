@@ -20,30 +20,25 @@
 <body class="page-body">
   <header class="main-header wrapper">
     <nav class="main-navigation">
-      <div class="">
-        <!-- class="main-navigation-wrapper" -->
-          <ul class="site-navigation">
-            <li><a href="blank.html">информация</a></li>
-            <li><a href="blank.html">фото и видео</a></li>
-            <li><a href="blank.html">карта штата</a></li>
-            <li><a href="catalog.html">гостиницы</a></li>
-          </ul>
-        <a class="main-header-logo" href="index.html">
-          <img src="img/logo-sedona.svg" width="170" height="70" alt="Логотип городка Седона">
-        </a>
-      </div>
+      <ul class="site-navigation">
+        <li class="nav-inform"><a href="blank.html">информация</a></li>
+        <li class="nav-photo"><a  href="blank.html">фото и видео</a></li>
+        <li class="nav-maps" ><a href="blank.html">карта штата</a></li>
+        <li class="nav-hostels"><a href="catalog.html">гостиницы</a></li>
+      </ul>
+      <a class="main-header-logo" href="index.html">
+        <img src="img/logo-sedona.svg" width="170" height="70" alt="Логотип городка Седона">
+      </a>
     </nav>
-
-  </header>
 
   </header>
 
   <main class="wrapper">
     <!-- <h1>Каталог гостинниц городка Седона</h1> Скрыть-->
-    <section class="hostel-lost"></section>
+    <div class="hostel-filter"></div>
     <!-- <h2>Фильтр товаров</h2> -->
 
-    <form class="hostel-form" method="get" action="https://echo.htmlacademy.ru">
+    <form class="hostel-catalog" method="get" action="https://echo.htmlacademy.ru">
       <fieldset class="hostel-infrastructure">
         <legend class="titleform">Инфраструктура:</legend>
         <ul>
@@ -102,7 +97,7 @@
       <span></span><span></span>
       <!--Стрелки-->
     </section>
-    <section class="hostels-resultat">
+    <section class="hostels-list">
       <!-- <h2>Список найденных отелей</h2> -->
       <!--Скрыть-->
       <article class="hostel">
@@ -175,34 +170,39 @@
       </article>
     </section>
   </main>
+
   <footer class="main-footer wrapper">
     <!-- <h2>Контактная информация</h2>Скрыть -->
+  <div>
     <p>#visitSEDONA</p>
     <p class="contacts-phone">ТЕЛ: +7(495) 666-01-66</p>
+  </div>
   <section class="footer-contacts">
     <!-- <h3>Страницы социальных сетей города</h3>Скрыть -->
     <ul class="social-list">
-      <li class="social-button">
+      <li class="social-button twitter">
         <a href="https://twitter.com/home">
           <img src="img/logo-twitter.png" width="17" height="15" alt="Перейти на Твиттер Седоны">
         </a>
       </li>
-      <li class="social-button">
+      <li class="social-button fb">
         <a href="https://www.facebook.com">
           <img src="img/logo-facebook.png" width="12" height="22" alt="Перейти на Фейсбук Седоны">
         </a>
       </li>
-      <li class="social-button">
+      <li class="social-button youtube">
         <a href="https://www.youtube.com">
           <img src="img/logo-youtube.png" width="20" height="16" alt="Перейти на Ютуб Седоны">
         </a>
       </li>
     </ul>
   </section>
+  <div>
     <p>Website by
-      <a href="https://htmlacademy.ru/">
-        <img src="img/logo-htmlacademy.svg" alt="Логотип Академии"></a>
+    <a href="https://htmlacademy.ru/">
+      <img src="img/logo-htmlacademy.svg" alt="Логотип Академии"></a>
     </p>
+  </div>
   </footer>
 </body>
 </html>
