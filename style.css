@@ -3,6 +3,8 @@
 }
 .page-body {
   margin-top: 0px;
+  margin-left: 40px;
+  margin-right: 40px;
   padding: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
@@ -20,7 +22,7 @@
 
   min-height: 100%;
   display: grid;
-  grid-template-rows: min-content 1fr min-content;
+  grid-template-rows: 70px 1fr 120px;
   align-content: start;
 }
 .wrapper {
@@ -63,6 +65,9 @@ img {
   --basic-blue-dark: #5496BD;
 }
 /* Навигация */
+.main-header-bar {
+
+}
 .main-navigation {
   height: 70px;
   font-family: PT Sans;
@@ -72,38 +77,35 @@ img {
   color: var(--basic-black);
   background-color: var(--basic-white);
 
+  display: grid;
   position: relative;
-
 }
 .site-navigation {
   list-style: none;
   margin: 0;
+
   padding: 0;
+  padding-top: 15px;
   text-decoration: none;
-
   display: grid;
-  grid-template-columns: 73px 127px 200px 200px 200px 200px 127px 73px;
-  grid-template-rows: 56px;
-
+  grid-template-columns: 200px 200px 400px 200px 200px;
 }
 .main-header-logo {
   margin-top: 0;
+
+
 }
-.nav-inform {
-  padding-top: 15px;
-  grid-column: 2/3;
+.site-navigation li:first-child(1) {
+  grid-column: 1/2;
  }
-.nav-photo {
-  padding-top: 15px;
-  grid-column: 3/4;
+.site-navigation li:nth-child(2){
+  grid-column: 2/3;
 }
-.nav-maps {
-  padding-top: 15px;
-  grid-column: 6/7;
+.site-navigation li:nth-child(3){
+  grid-column: 4/5;
 }
-.nav-hostels {
-  padding-top: 15px;
-  grid-column: 7/8;
+.site-navigation a:last-child(4) {
+  grid-column: 5/6;
 }
 
 /* Состояния ссылок-Навигация */
@@ -139,7 +141,6 @@ img {
 .logo-index {
   height: 509px;
   background: url(img/background_photo.jpg);
-  justify-self: center;
 }
 .logo-welcome {
   width: 456.65px;
@@ -184,7 +185,6 @@ img {
   grid-template-rows: 256px 330px 256px 256px ;
 }
 .features-list li:nth-child(1) {
-  color: var(--basic-white);
   background-color: var(--basic-blue-light);
   grid-column: 1/4;
   display: grid;
@@ -200,7 +200,6 @@ img {
   background-color: var(--basic-white);
 }
 .features-list li:nth-child(5) {
-
   background-color: var(--basic-blue-light);
   grid-column: 1/4;
   display: grid;
@@ -215,27 +214,13 @@ img {
 .features-list li:nth-child(8) {
   background-color: var(--basic-graylight-original);
 }
-.features-list h2 {
+.feature-list h2 {
   font-size: 21px;
   font-weight: 700;
-  margin-top: 47px;
 }
-.features-list h3 {
+.feature-list h3 {
   font-size: 21px;
   font-weight: 700;
-  margin-top: 47px;
-}
-.features-list h3:nth-child(2) {
-  margin-top: 28px;
-}
-.features-list h3:nth-child(3) {
-  margin-top: 29px;
-}
-.features-list h3:nth-child(4) {
-  margin-top: 28px;
-}
-.features-list p {
-
 }
 .interest {
   height: 291px;
@@ -271,7 +256,6 @@ img {
   color: var(--basic-white);
   background-color: var(--basic-brown-light);
   margin-top: -86px;
-  position: relative;
 
 
 }
@@ -295,16 +279,17 @@ img {
 }
 .map {
   margin-bottom: -120px;
-
 }
 
 /* Подвал */
 .main-footer {
-
+  width: 1200px;
   height: 120px;
 
   color: var(--basic-black);
   background-color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0px;
+  padding-bottom: 0px;
   background-position: 0 0;
   display: grid;
   grid-template-columns: 400px 400px 400px;
@@ -315,30 +300,8 @@ img {
   font-weight: 700;
 }
 .social-list {
-  margin: 0;
-  padding: 0;
   list-style: none;
-  grid-column: 2/3;
-  display: grid;
-  grid-template-columns: 125px 46px 46px 46px 125px;
-  grid-template-rows: 36px 1fr 36px;
-  gap: 6px;
-
 }
-.social-list li.fb {
-  grid-column: 3/4;
-  grid-row: 2/3;
-}
-.social-list li.twitter {
-  grid-column: 2/3;
-  grid-row: 2/3;
-}
-.social-list li.youtube{
-  grid-column: 4/5;
-  grid-row: 2/3;
-}
-
-
 .social-list li:hover {
   background-color: var(--basic-blue-skay);
 }
