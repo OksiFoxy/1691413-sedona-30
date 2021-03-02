@@ -411,29 +411,77 @@ img {
   grid-template-rows: 217px;
 }
 .hostel-infrastructure {
-  text-align: start;
   grid-column: 2/3;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 0px;
+  padding-bottom: 32px;
+  padding-top: 24px;
 }
 .hostel-infrastructure ul {
-  padding-left: 0;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .hostel-type {
   grid-column: 3/5;
+  margin: 0px;
+  padding: 0px;
+  padding-left: 135px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 32px;
+  padding-top: 24px;
+  border: 0px;
 }
 .hostel-type ul {
-  text-align: start;
-  padding-left: 135px;
+  width: 125px;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .hostel-price {
   grid-column: 6/8;
-}
-.hostel-  ul {
-  list-style: none;
-
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 32px;
+  padding-top: 10px;
+  border: 0px;
 }
 .titleform {
+  text-align: start;
   font-size: 16px;
   font-weight: 700;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 24px;
+}
+.hostel-price-input {
+  display: flex;
+  flex-wrap: nowrap;
+  border: 2px solid #FFFFFF;
+  border-radius: 2px;
+}
+.hostel-price-input input {
+  width: 158px;
+  height: 36px;
 }
 .show {
   width: 137px;
