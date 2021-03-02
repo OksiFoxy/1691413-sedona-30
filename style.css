@@ -194,30 +194,30 @@ img {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-
 }
 .interest {
-  height: 291px;
+  height: 233px;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 58px;
   background-color: var(--basic-white);
-  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .interest-title {
-  width: 297px;
-  height: 24px;
-  margin-left: 446px;
-  padding-top: 58px;
-  margin-top: 0px;
+  margin: 0px;
+  padding: 0px;
   font-size: 30px;
   font-weight: 700;
   line-height: 24px;
-  text-align: center;
 }
 .interest-text {
   width: 435px;
-  height: 95px;
-  margin-left: 383px;
-  margin-right: 382px;
-  margin-top: 4px;
+  margin: 0px;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Форма поиска */
@@ -229,7 +229,16 @@ img {
   line-height: 26px;
   color: var(--basic-white);
   background-color: var(--basic-brown-light);
-  margin-top: -86px;
+  padding: 0px;
+  margin:0px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
 }
 .appointment-title:hover {
   color: var(--basic-white);
@@ -241,33 +250,74 @@ img {
   background-color: var(--basic-brown-dark);
 }
 .appointment-info  {
-  width: 568px;
-  height: 395px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  width: 458px;
+  height: 285px;
   background-color: var(--basic-white);
   margin-left: 315px;
   margin-right: 316px;
   position: absolute;
-  justify-content: space-around;
+  padding: 55px;
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
+.appointment-item {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.appointment-item input {
+  width: 346px;
+  height: 38px;
+  background-color: var(--basic-gray-very-light);
+  border: 0px;
+}
+.appointment-item-number {
+  display: flex;
+  justify-content: space-between;
+}
+.item-number input {
+  width: 114px;
+  height: 38px;
+  background-color: var(--basic-gray-very-light);
+  border: 0px;
+}
+.appointment-info .but-call {
+  background-color: none;
+  position: absolute;
+  border: 0px;
+  display: flex;
+  align-items: flex-end;
+}
+.but-call:link {
+  color: var(--basic-gray-light);
+}
+.but-call:focus {
+  color: var(--basic-black);
+}
+.but-call:active {
+  color: var(--basic-blue);
+}
 /* Кнопка Найти */
-.appointment-info  button {
+.button-search {
   width: 458px;
   height: 58px;
   border: 0px;
   font-size: 21px;
   font-weight: 700;
   color: white;
-  padding: auto;
 }
-.appointment-info  button {
+ .button-search {
   background-color: var(--basic-blue);
 }
-.appointment-info  button:hover {
+ .button-search:hover {
   background-color: var(--basic-blue-skay);
 }
-.appointment-info  button:active {
+.button-search:active {
   background-color: var(--basic-blue-dark);
   opacity: 0.3;
 }
