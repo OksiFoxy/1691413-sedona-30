@@ -399,7 +399,6 @@ img {
 .footer-copyright a:hover {
   color: var(--basic-blue);
 }
-/* .footer-copyright a:active */
 
 /* КАТАЛОГ */
 
@@ -628,12 +627,10 @@ img {
 .to-book {
   width: 142px;
   height: 27px;
-
   color: var(--basic-white);
   background-color: var(--basic-brown-light);
   grid-column: 3/4;
   grid-row: 3/4;
-
 }
 .to-book:link {
   color: var(--basic-white);
