@@ -35,6 +35,18 @@ img {
   max-width: 100%;
   height: auto;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* Цвета */
 :root {
   --basic-black: #000000;
@@ -143,7 +155,7 @@ img {
   margin-top: 0px;
   padding-top: 42.5px;
 }
-.about-city p:nth-child(1) {
+.about-city p:first-of-type {
   width: 470px;
   height: 80px;
   margin-top: 0px;
@@ -253,7 +265,6 @@ img {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-
 }
 .appointment-title:hover {
   color: var(--basic-white);
@@ -277,36 +288,40 @@ img {
   padding: 55px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
+}
+.appointment-date {
+  position: relative;
+  padding: 0px;
+  margin: 0px;
 }
 .appointment-item {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
 }
+.appointment-item label {
+  padding-right: 16px;
+}
+.departure-date label {
+  padding-right: 16px;
+}
 .appointment-item input {
   width: 346px;
   height: 38px;
   background-color: var(--basic-gray-very-light);
+  padding: 0px;
   border: 0px;
 }
-.appointment-item-number {
-  display: flex;
-  justify-content: space-between;
-}
-.item-number input {
-  width: 114px;
-  height: 38px;
-  background-color: var(--basic-gray-very-light);
-  border: 0px;
-}
-.appointment-info .but-call {
+.appointment-date .but-call {
   background-color: none;
   position: absolute;
   border: 0px;
   display: flex;
   align-items: flex-end;
+  top: 23px;
+  right: 9px;
 }
 .but-call:link {
   color: var(--basic-gray-light);
@@ -317,6 +332,34 @@ img {
 .but-call:active {
   color: var(--basic-blue);
 }
+.number {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.number .adults-number {
+  width: 226px;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.number .adults-number label {
+  padding-right: 35px;
+}
+.number .childrens-number  label {
+  padding-right: 27px;
+}
+.number input {
+  width: 114px;
+  height: 38px;
+  background-color: var(--basic-gray-very-light);
+  border: 0px;
+  padding: 0px;
+}
 /* Кнопка Найти */
 .button-search {
   width: 458px;
@@ -325,6 +368,8 @@ img {
   font-size: 21px;
   font-weight: 700;
   color: white;
+  position: relative;
+  text-transform: uppercase
 }
  .button-search {
   background-color: var(--basic-blue);
@@ -339,7 +384,6 @@ img {
 .map {
   margin-bottom: -120px;
 }
-
 /* Подвал */
 .main-footer {
   width: 1200px;
@@ -406,6 +450,12 @@ img {
 .prod {
   grid-column: 3/4;
   grid-row: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prod p {
+  padding-right: 8px;
 }
 .footer-copyright a:hover {
   width: 74px;
@@ -414,9 +464,7 @@ img {
 .footer-copyright a:hover {
   color: var(--basic-blue);
 }
-
 /* КАТАЛОГ */
-
 .hostel-catalog {
   background: url(img/background.jpg);
   color: var(--basic-white);
@@ -490,25 +538,40 @@ img {
 .hostel-price-input {
   display: flex;
   flex-wrap: nowrap;
-  border: 2px solid #FFFFFF;
-  border-radius: 2px;
+  color: var(--basic-white);
 }
 .hostel-price-input input {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
   width: 158px;
   height: 36px;
 }
-.show {
+.hostel-price-input input:first-of-type {
+  margin-right: -2px;
+}
+.range-slider{
+  position: relative;
+  display: flex;
+}
+.range-max {
+  position: absolute;
+}
+.button-show {
   width: 137px;
   height: 37px;
   color: var(--basic-white);
-  border: 1px solid #ffffff;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: uppercase
 }
 /* Сортировка */
 .sorting {
   padding-left: 73px;
   padding-right: 73px;
+  position: relative;
   height: 56px;
   background-color: var(--basic-white);
   display: flex;
@@ -543,6 +606,23 @@ img {
   color: var(--basic-black);
 }
 .sorting a:visited {
+  color: var( --basic-blue-light);
+}
+.sorting-button {
+  position: absolute;
+  right: 73px;
+}
+.sorting .sorting-button a:link {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+.sorting .sorting-button a:hover {
+  color: var(--basic-blue-light);
+}
+.sorting .sorting-button a:active {
+  color: var(--basic-black);
+}
+.sorting .sorting-button a:visited {
   color: var( --basic-blue-light);
 }
 /* Раздел с результатами отелей */
@@ -639,7 +719,6 @@ img {
   background-color: var(--basic-blue-dark);
   opacity: 0.3;
 }
-
 /* Забронировать */
 .to-book {
   width: 142px;
@@ -671,9 +750,20 @@ img {
   background-color: var(--basic-gray-very-light);
   grid-column: -2/-1;
   grid-row: -2/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .stars {
   grid-column: -2/-1;
   grid-row: 1/2;
+  display: flex;
+  justify-content: flex-end;
 }
-
+.star {
+  width: 18px;
+  height: 17px;
+  background-image: url(img/stars.png);
+  background-size: cover;
+  margin-right: 5px;
+}
