@@ -22,6 +22,10 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .wrapper {
   width 1200px;
@@ -142,6 +146,7 @@ img {
 }
  /* Логотип на фоне*/
 .logo-index {
+  width: 1200px;
   height: 509px;
   background: url(img/background_photo.jpg);
   display: flex;
@@ -150,30 +155,33 @@ img {
 }
 /* Преимущества */
 .about-city {
-  height: 216px;
+  width: 520px;
+  height: 125px;
   background-color: var(--basic-white);
   margin-top: 0px;
-  padding-top: 42.5px;
+  padding-top: 42px;
+  padding-bottom: 51px;
+  padding-left: 340px;
+  padding-right: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .about-city p:first-of-type {
-  width: 470px;
-  height: 80px;
-  margin-top: 0px;
-  margin-left: 365px;
-  margin-right: 365px;
-  margin-bottom: 16.5px;
+  margin:0px;
+  padding: 0px;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
+  display: flex;
+  justify-content: center;
 }
-.about-city p:nth-child(2) {
-  width: 512px;
-  height: 26px;
-
-  margin-top: 0px;
-  margin-bottom: 51px;
-  margin-left: 340px;
-  margin-right: 341px;
+.about-city p:last-of-type {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
 }
 /* Разделы с преимуществами */
 .features-list {
@@ -217,9 +225,43 @@ img {
 }
 .feauteres-item-card{
   display: flex;
-  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 54px;
+  padding-top: 47px;
+}
+.feauteres-item-card h2:first-of-type {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  width: 300px;
+  justify-content: center;
+}
+.feauteres-item-card h3:first-of-type {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  width: 300px;
+  justify-content: center;
+}
+.feauteres-item-card p:first-of-type {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  width: 300px;
+  justify-content: center;
+}
+.feauteres-item-card p:last-of-type {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  width: 300px;
+  min-height: 45px;
   flex-wrap: wrap;
 }
 .interest {
