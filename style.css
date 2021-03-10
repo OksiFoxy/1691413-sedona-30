@@ -153,6 +153,13 @@ img {
   justify-content: center;
   text-align: center;
 }
+.logo-index::after {
+  content: url(img/whiteshape.png);
+  width: 1200px;
+  height: 57px;
+  position: absolute;
+  top: 509px;
+}
 /* Преимущества */
 .about-city {
   width: 520px;
