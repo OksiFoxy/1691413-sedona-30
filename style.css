@@ -322,31 +322,30 @@ img {
   font-size: 14px;
   line-height: 26px;
   width: 458px;
-  height: 285px;
+  height: 174px;
   background-color: var(--basic-white);
   margin-left: 315px;
   margin-right: 316px;
   position: absolute;
   padding: 55px;
+  padding-bottom: 167px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.appointment-date {
-  position: relative;
-  padding: 0px;
-  margin: 0px;
-}
 .appointment-item {
+  position: relative;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .appointment-item label {
-  padding-right: 16px;
-}
-.departure-date label {
+  padding-top: 6px;
   padding-right: 16px;
 }
 .appointment-item input {
@@ -355,33 +354,54 @@ img {
   background-color: var(--basic-gray-very-light);
   padding: 0px;
   border: 0px;
-}
-.appointment-date .but-call {
-  background-color: none;
   position: absolute;
-  border: 0px;
-  display: flex;
-  align-items: flex-end;
-  top: 23px;
-  right: 9px;
+  right: 0px;
 }
-.but-call:link {
+ .but-call-arrival {
+  background-color: transparent;
+  width: 22px;
+  height: 23px;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  top: 60px;
+  right: 65px;
+}
+.but-call-arrival:link {
   color: var(--basic-gray-light);
 }
-.but-call:focus {
+.but-call-arrival:focus {
   color: var(--basic-black);
 }
-.but-call:active {
+.but-call-arrival:active {
   color: var(--basic-blue);
 }
+.but-call-departure {
+  background-color: transparent;
+  width: 22px;
+  height: 23px;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  top: 130px;
+  right: 65px;
+}
 .number {
+  width: 458px;
+  height: 38px;
   padding: 0px;
   margin: 0px;
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
 }
-.number .adults-number {
+.item-number {
+  margin: 0px;
+  padding: 0px;
+}
+.adults-number {
   width: 226px;
   margin: 0px;
   padding: 0px;
@@ -389,10 +409,14 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-.number .adults-number label {
+.adults-number label {
+  margin: 0px;
+  padding: 0px;
   padding-right: 35px;
 }
-.number .childrens-number  label {
+.childrens-number  label {
+  margin: 0px;
+  padding: 0px;
   padding-right: 27px;
 }
 .number input {
@@ -410,8 +434,9 @@ img {
   font-size: 21px;
   font-weight: 700;
   color: white;
-  position: relative;
-  text-transform: uppercase
+  position: absolute;
+  bottom: 55px;
+  text-transform: uppercase;
 }
  .button-search {
   background-color: var(--basic-blue);
