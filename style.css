@@ -291,14 +291,17 @@ input::-webkit-inner-spin-button {
   background-color: var(--basic-graylight-original);
 }
 .interest {
-  height: 233px;
+  height: 97px;
   margin: 0px;
   padding: 0px;
   padding-top: 58px;
+  padding-bottom: 136px;
   background-color: var(--basic-white);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 .interest-title {
   margin: 0px;
@@ -307,13 +310,18 @@ input::-webkit-inner-spin-button {
   font-weight: 700;
   line-height: 24px;
 }
-.interest-text {
+.interest p:nth-of-type(2) {
   width: 435px;
-  min-height: 43px;
   margin: 0px;
   padding: 0px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 30px;
+  line-height: 24px;
+}
+.interest p:nth-of-type(3) {
+  width: 435px;
+  margin: 0px;
+  padding: 0px;
+  line-height: 24px;
 }
 /* Форма поиска */
 .appointment-title {
@@ -328,6 +336,8 @@ input::-webkit-inner-spin-button {
   margin:0px;
   margin-left: auto;
   margin-right: auto;
+  position: absolute;
+  bottom: 0px;
 
   display: flex;
   flex-direction: column;
