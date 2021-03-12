@@ -383,6 +383,11 @@ input::-webkit-inner-spin-button {
   position: absolute;
   right: 0px;
 }
+.appointment-item input::-webkit-input-placeholder {color: var(--basic-black);text-align:start;font-weight: bold;text-transform: uppercase;padding-left: 13px;}
+.appointment-item input::-moz-placeholder          {color: var(--basic-black);text-align:start;font-weight: bold;text-transform: uppercase;padding-left: 13px;}/* Firefox 19+ */
+.appointment-item input:-moz-placeholder           {color: var(--basic-black);text-align:start;font-weight: bold;text-transform: uppercase;padding-left: 13px;}/* Firefox 18- */
+.appointment-item input:-ms-input-placeholder      {color: var(--basic-black);text-align:start;font-weight: bold;text-transform: uppercase;padding-left: 13px;}
+
  .but-call-arrival {
   background-color: transparent;
   width: 22px;
@@ -414,6 +419,50 @@ input::-webkit-inner-spin-button {
   top: 130px;
   right: 65px;
 }
+.but-plus-adults  {
+  background-color: transparent;
+  width: 11px;
+  height: 11px;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  bottom: 180px;
+  right: 300px;
+}
+.but-min-adults {
+  background-color: transparent;
+  width: 11px;
+  height: 11px;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  bottom: 185px;
+  right: 375px;
+}
+.but-min-children {
+  background-color: transparent;
+  width: 11px;
+  height: 11px;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  bottom: 185px;
+  right: 145px;
+}
+.but-plus-children {
+  background-color: transparent;
+  width: 11px;
+  height: 11px;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  bottom: 180px;
+  right: 65px;
+}
 .number {
   width: 458px;
   height: 38px;
@@ -428,12 +477,22 @@ input::-webkit-inner-spin-button {
   padding: 0px;
 }
 .adults-number {
-  width: 226px;
+  width: 230px;
   margin: 0px;
   padding: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+.childrens-number {
+  width: 230px;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
 }
 .adults-number label {
   margin: 0px;
@@ -445,6 +504,7 @@ input::-webkit-inner-spin-button {
   padding: 0px;
   padding-right: 27px;
 }
+
 .number input {
   width: 114px;
   height: 38px;
@@ -452,6 +512,11 @@ input::-webkit-inner-spin-button {
   border: 0px;
   padding: 0px;
 }
+.number input::-webkit-input-placeholder {color: var(--basic-black);text-align:center;font-weight: bold;}
+.number input::-moz-placeholder          {color: var(--basic-black);text-align:center;font-weight: bold;}/* Firefox 19+ */
+.number input:-moz-placeholder           {color: var(--basic-black);text-align:center;font-weight: bold;}/* Firefox 18- */
+.number input:-ms-input-placeholder      {color: var(--basic-black);text-align:center;font-weight: bold;}
+
 /* Кнопка Найти */
 .button-search {
   width: 458px;
@@ -678,6 +743,10 @@ input::-webkit-inner-spin-button {
   color: var(--basic-white);
   padding-top: 10px;
 }
+::-webkit-input-placeholder {text-align:center;color: var(--basic-white);text-transform: uppercase;}
+::-moz-placeholder          {text-align:center;color: var(--basic-white);text-transform: uppercase;}/* Firefox 19+ */
+:-moz-placeholder           {text-align:center;color: var(--basic-white);text-transform: uppercase;}/* Firefox 18- */
+:-ms-input-placeholder      {text-align:center;color: var(--basic-white);text-transform: uppercase;}
 .price-controls input {
   background-color: transparent;
   border: 2px solid #ffffff;
