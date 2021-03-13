@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Шишова Оксана](https://up.htmlacademy.ru/htmlcss/30/user/1691413).
-* Наставник: [Александр Григорьев](https://htmlacademy.ru/profile/fuckhtml).
+* Наставник: [Марина Удовенко](https://htmlacademy.ru/profile/id7570).
 
 ---
 
