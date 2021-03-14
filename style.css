@@ -440,8 +440,8 @@ input::-webkit-inner-spin-button {
   padding: 0px;
   margin: 0px;
   position: absolute;
-  bottom: 180px;
-  right: 300px;
+  bottom: 165px;
+  right: 288px;
 }
 .but-min-adults {
   background-color: transparent;
@@ -451,8 +451,8 @@ input::-webkit-inner-spin-button {
   padding: 0px;
   margin: 0px;
   position: absolute;
-  bottom: 185px;
-  right: 375px;
+  bottom: 169px;
+  right: 360px;
 }
 .but-min-children {
   background-color: transparent;
@@ -462,8 +462,8 @@ input::-webkit-inner-spin-button {
   padding: 0px;
   margin: 0px;
   position: absolute;
-  bottom: 185px;
-  right: 145px;
+  bottom: 169px;
+  right: 130px;
 }
 .but-plus-children {
   background-color: transparent;
@@ -473,10 +473,12 @@ input::-webkit-inner-spin-button {
   padding: 0px;
   margin: 0px;
   position: absolute;
-  bottom: 180px;
-  right: 65px;
+  bottom: 165px;
+  right: 55px;
 }
-.svg-change path {
+.svg-change {
+  width: 38px;
+  height: 38px;
   fill: var(--basic-gray-light);
   border: none;
 }
@@ -488,6 +490,12 @@ input::-webkit-inner-spin-button {
   fill: var(--basic-blue-light);
   border: none;
 }
+.number .svg-change {
+  width: 38px;
+  height: 38px;
+  fill: var(--basic-gray-light);
+  border: none;
+}
 .number {
   width: 458px;
   height: 38px;
@@ -497,10 +505,25 @@ input::-webkit-inner-spin-button {
   justify-content: space-between;
   flex-wrap: nowrap;
 }
+.item-number input::-webkit-input-placeholder {color: var(--basic-black);text-align:center;font-weight: bold;}
+.item-number input::-moz-placeholder          {color: var(--basic-black);text-align:center;font-weight: bold;}/* Firefox 19+ */
+.item-number input:-moz-placeholder           {color: var(--basic-black);text-align:center;font-weight: bold;}/* Firefox 18- */
+.item-number input:-ms-input-placeholder      {color: var(--basic-black);text-align:center;font-weight: bold;}
+
 .item-number {
   margin: 0px;
   padding: 0px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
 }
+::-webkit-input-placeholder {color: var(--basic-black);text-align:center;font-weight: bold;}
+::-moz-placeholder          {color: var(--basic-black);text-align:center;font-weight: bold;}/* Firefox 19+ */
+:-moz-placeholder           {color: var(--basic-black);text-align:center;font-weight: bold;}/* Firefox 18- */
+:-ms-input-placeholder      {color: var(--basic-black);text-align:center;font-weight: bold;}
+
 .adults-number {
   width: 230px;
   margin: 0px;
@@ -523,24 +546,72 @@ input::-webkit-inner-spin-button {
   margin: 0px;
   padding: 0px;
   padding-right: 35px;
+  color: var(--basic-black);
+  font: bold 14px/26px "PT Sans";
 }
 .childrens-number label {
   margin: 0px;
   padding: 0px;
   padding-right: 27px;
+  color: var(--basic-black);
+  font: bold 14px/26px "PT Sans";
+
+}
+::-webkit-input-placeholder {
+  color: var(--basic-black);
+  text-align:center;
+  font: bold 14px/26px "PT Sans";
+}
+::-moz-placeholder          {
+  color: var(--basic-black);
+  text-align:center;
+  font: bold 14px/26px "PT Sans";
+}/* Firefox 19+ */
+:-moz-placeholder           {
+  color: var(--basic-black);
+  text-align:center;
+  font: bold 14px/26px "PT Sans";
+}/* Firefox 18- */
+:-ms-input-placeholder      {
+  color: var(--basic-black);
+  text-align:center;
+  font:bold 14px/26px "PT Sans";
 }
 .number input {
-  width: 114px;
+  width: 38px;
   height: 38px;
   background-color: var(--basic-gray-very-light);
   border: 0px;
   padding: 0px;
+  padding-left: 38px;
+  padding-right: 38px;
+  text-align: center;
 }
-.number input::-webkit-input-placeholder {color: var(--basic-black);text-align:center;font-weight: bold;}
-.number input::-moz-placeholder          {color: var(--basic-black);text-align:center;font-weight: bold;}/* Firefox 19+ */
-.number input:-moz-placeholder           {color: var(--basic-black);text-align:center;font-weight: bold;}/* Firefox 18- */
-.number input:-ms-input-placeholder      {color: var(--basic-black);text-align:center;font-weight: bold;}
-
+::-webkit-input-placeholder {
+  color: var(--basic-black);
+  text-align:center;
+  font: bold 14px/26px "PT Sans";
+}
+::-moz-placeholder          {
+  color: var(--basic-black);
+  text-align:center;
+  font: bold 14px/26px "PT Sans";
+}/* Firefox 19+ */
+:-moz-placeholder           {
+  color: var(--basic-black);
+  text-align:center;
+  font: bold 14px/26px "PT Sans";
+}/* Firefox 18- */
+:-ms-input-placeholder      {
+  color: var(--basic-black);
+  text-align:center;
+  font:bold 14px/26px "PT Sans";
+}
+.number .item-number input {
+  color: var(--basic-black);
+  text-align:center;
+  font:bold 14px/26px "PT Sans";
+}
 /* Кнопка Найти */
 .button-search {
   width: 458px;
