@@ -393,6 +393,7 @@ input::-webkit-inner-spin-button {
   border: 0px;
   position: absolute;
   right: 0px;
+  outline: none;
 }
 .appointment-item input:hover {
   background-color: var(--basic-gray-very-light-light);
@@ -413,6 +414,7 @@ input::-webkit-inner-spin-button {
   border: 0px;
   padding: 0px;
   margin: 0px;
+  outline: none;
   position: absolute;
   top: 56px;
   right: 55px;
@@ -431,8 +433,9 @@ input::-webkit-inner-spin-button {
   border: 0px;
   padding: 0px;
   margin: 0px;
+  outline: none;
   position: absolute;
-  top: 125px;
+  top: 124px;
   right: 55px;
 }
 .but-plus-adults  {
@@ -442,6 +445,7 @@ input::-webkit-inner-spin-button {
   border: 0px;
   padding: 0px;
   margin: 0px;
+  outline: none;
   position: absolute;
   bottom: 167px;
   right: 286px;
@@ -453,6 +457,7 @@ input::-webkit-inner-spin-button {
   border: 0px;
   padding: 0px;
   margin: 0px;
+  outline: none;
   position: absolute;
   bottom: 170px;
   right: 360px;
@@ -464,6 +469,7 @@ input::-webkit-inner-spin-button {
   border: 0px;
   padding: 0px;
   margin: 0px;
+  outline: none;
   position: absolute;
   bottom: 170px;
   right: 130px;
@@ -475,6 +481,7 @@ input::-webkit-inner-spin-button {
   border: 0px;
   padding: 0px;
   margin: 0px;
+  outline: none;
   position: absolute;
   bottom: 167px;
   right: 53px;
@@ -491,7 +498,8 @@ input::-webkit-inner-spin-button {
 }
 .svg-change:active path {
   fill: var(--basic-blue-light);
-  border: none;
+  border: transparent;
+  outline: transparent;
 }
 .number .svg-change {
   width: 38px;
@@ -586,6 +594,7 @@ input::-webkit-inner-spin-button {
   background-color: var(--basic-gray-very-light);
   border: 0px;
   padding: 0px;
+  outline: none;
   padding-left: 38px;
   padding-right: 38px;
   text-align: center;
@@ -621,6 +630,7 @@ input::-webkit-inner-spin-button {
   height: 58px;
   border: 0px;
   padding: 0px;
+  outline: none;
   padding-left: 2px;
   margin-top: 38px;
   font-size: 21px;
@@ -693,13 +703,6 @@ input::-webkit-inner-spin-button {
 .social-list li:first-of-type {
   margin-left: 0px;
 }
-.social-list li:hover {
-  background-color: var(--basic-blue-skay);
-}
-.social-list li:active {
-  color: rgba(255,255,255,0.3);
-  background-color: var(--basic-blue-dark);
-}
 .social-button {
   width: 46px;
   height: 48px;
@@ -709,8 +712,14 @@ input::-webkit-inner-spin-button {
   justify-content: center;
   align-items: center;
 }
-.social-button:active path {
-  fill: rgba(255,255,255,0.3);
+.social-button:hover {
+  background-color: var(--basic-blue-skay);
+}
+.social-button:active {
+  background-color: var(--basic-blue-dark);
+}
+.social-button:active img {
+color: rgba(255,255,255,0.3);
 }
 .prod {
   padding-right: 73px;
@@ -848,10 +857,10 @@ input[type="checkbox"] {
   color: var(--basic-white);
   padding-top: 10px;
 }
-::-webkit-input-placeholder {text-align:center;color: var(--basic-white);text-transform: uppercase;}
-::-moz-placeholder          {text-align:center;color: var(--basic-white);text-transform: uppercase;}/* Firefox 19+ */
-:-moz-placeholder           {text-align:center;color: var(--basic-white);text-transform: uppercase;}/* Firefox 18- */
-:-ms-input-placeholder      {text-align:center;color: var(--basic-white);text-transform: uppercase;}
+::-webkit-input-placeholder {text-align:center;color: var(--basic-white);text-transform: uppercase;text-align: center;}
+::-moz-placeholder          {text-align:center;color: var(--basic-white);text-transform: uppercase;text-align: center;}/* Firefox 19+ */
+:-moz-placeholder           {text-align:center;color: var(--basic-white);text-transform: uppercase;text-align: center;}/* Firefox 18- */
+:-ms-input-placeholder      {text-align:center;color: var(--basic-white);text-transform: uppercase;text-align: center;}
 
 .price-controls input {
   background-color: transparent;
@@ -860,6 +869,8 @@ input[type="checkbox"] {
   padding: 0px;
   width: 156px;
   height: 32px;
+  outline: none;
+  text-align: center;
 }
 .price-controls input:first-of-type {
   margin-left: -2px;
@@ -917,6 +928,7 @@ input[type="checkbox"] {
   height: 36px;
   padding: 0px;
   margin-right: 10px;
+  outline: none;
   color: var(--basic-white);
   background-color: transparent;
   border: 2px solid #ffffff;
