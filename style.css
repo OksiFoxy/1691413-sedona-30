@@ -356,13 +356,12 @@ input::-webkit-inner-spin-button {
   font-size: 14px;
   line-height: 26px;
   width: 458px;
-  height: 174px;
+  height: 286px;
   background-color: var(--basic-white);
   margin-left: 315px;
   margin-right: 316px;
   position: absolute;
   padding: 55px;
-  padding-bottom: 167px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -440,8 +439,8 @@ input::-webkit-inner-spin-button {
   padding: 0px;
   margin: 0px;
   position: absolute;
-  bottom: 165px;
-  right: 288px;
+  bottom: 167px;
+  right: 286px;
 }
 .but-min-adults {
   background-color: transparent;
@@ -451,7 +450,7 @@ input::-webkit-inner-spin-button {
   padding: 0px;
   margin: 0px;
   position: absolute;
-  bottom: 169px;
+  bottom: 170px;
   right: 360px;
 }
 .but-min-children {
@@ -462,7 +461,7 @@ input::-webkit-inner-spin-button {
   padding: 0px;
   margin: 0px;
   position: absolute;
-  bottom: 169px;
+  bottom: 170px;
   right: 130px;
 }
 .but-plus-children {
@@ -473,8 +472,8 @@ input::-webkit-inner-spin-button {
   padding: 0px;
   margin: 0px;
   position: absolute;
-  bottom: 165px;
-  right: 55px;
+  bottom: 167px;
+  right: 53px;
 }
 .svg-change {
   width: 38px;
@@ -617,11 +616,11 @@ input::-webkit-inner-spin-button {
   width: 458px;
   height: 58px;
   border: 0px;
+  padding: 0px;
+  margin-top: 40px;
   font-size: 21px;
   font-weight: 700;
   color: var(--basic-white);
-  position: absolute;
-  bottom: 55px;
   text-transform: uppercase;
   background-color: var(--basic-blue);
 }
@@ -633,7 +632,7 @@ input::-webkit-inner-spin-button {
   background-color: var(--basic-blue-dark);
 }
 .map {
-  margin-bottom: -120px;
+  margin-bottom: -125px;
 }
 /* Подвал */
 .main-footer {
