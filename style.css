@@ -805,6 +805,7 @@ color: rgba(255,255,255,0.3);
   padding-right: 73px;
   padding-left: 10px;
   border: 0px;
+  position: relative;
 }
 .titleform {
   text-align: start;
@@ -823,28 +824,25 @@ color: rgba(255,255,255,0.3);
 input[type="checkbox"] {
   display: none;
 }
-.filter-input-checkbox:hover + label,
-.filter-input-checkbox:focus + label {
-  color: var(--special);
-}
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
   left: -39px;
-  top: -1px;
-  width: 19px;
-  height: 19px;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
+  top: -2px;
+  width: 23px;
+  height: 23px;
+  background-image: url("img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
-.filter-input-checkbox:checked + label::after {
+.filter-input-checkbox:checked + label::before {
   content: "";
   position: absolute;
-  top: -1px;
-  left: -34px;
-  width: 22px;
-  height: 17px;
-  background-image: url("img/ok.png");
+  top: -2px;
+  left: -39px;
+  width: 23px;
+  height: 23px;
+  background-image: url("img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -855,25 +853,48 @@ input[type="checkbox"] {
   display: flex;
   flex-wrap: nowrap;
   color: var(--basic-white);
-  padding-top: 10px;
+  width: 313px;
+  height: 32px;
+  margin-top: 10px;
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+  margin-right: 5px;
+  font-weight: bold;
 }
-::-webkit-input-placeholder {text-align:center;color: var(--basic-white);text-transform: uppercase;text-align: center;}
-::-moz-placeholder          {text-align:center;color: var(--basic-white);text-transform: uppercase;text-align: center;}/* Firefox 19+ */
-:-moz-placeholder           {text-align:center;color: var(--basic-white);text-transform: uppercase;text-align: center;}/* Firefox 18- */
-:-ms-input-placeholder      {text-align:center;color: var(--basic-white);text-transform: uppercase;text-align: center;}
+::-webkit-input-placeholder {text-align:center;color: var(--basic-white);text-transform: uppercase;text-align: start;}
+::-moz-placeholder          {text-align:center;color: var(--basic-white);text-transform: uppercase;text-align: start;}/* Firefox 19+ */
+:-moz-placeholder           {text-align:center;color: var(--basic-white);text-transform: uppercase;text-align: start;}/* Firefox 18- */
+:-ms-input-placeholder      {text-align:center;color: var(--basic-white);text-transform: uppercase;text-align: start;}
 
 .price-controls input {
+  width: 40px;
+  height: 21px;
+  font-weight: bold;
+  color: var(--basic-white);
   background-color: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-  padding: 0px;
-  width: 156px;
-  height: 32px;
   outline: none;
-  text-align: center;
+  border: none;
+  padding: 0px;
+  padding-top: 3px;
+  margin-left: 2px;
 }
-.price-controls input:first-of-type {
-  margin-left: -2px;
+.price-controls label:nth-of-type(1) {
+  margin-left: 64px;
+  margin-right: 45px;
+  font: inherit;
+}
+.price-controls label:nth-of-type(2) {
+  margin-left: 45px;
+}
+.filter-item .price-controls::after {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 170px;
+  width: 2px;
+  height: 22px;
+  background-color: var(--basic-white);
+  transform: translateX(-50%) translateY(-50%);
 }
 .range-filter{
   margin: 0px;
@@ -885,10 +906,9 @@ input[type="checkbox"] {
 }
 .range-controls {
   margin: 0px;
-  width: 325px;
+  width: 319px;
   position: relative;
   height: 19px;
-  margin-top: 10px;
 }
 .range-controls .scale {
   height: 2px;
@@ -903,8 +923,8 @@ input[type="checkbox"] {
   position: absolute;
   top: -50%;
   left: 0;
-  width: 9px;
-  height: 9px;
+  width: 4px;
+  height: 4px;
   padding: 0;
   border: 8px solid #ffffff;
   background-color: var(--basic-graylight);
@@ -913,10 +933,10 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 .range-controls .toggle-min {
-  left: 0px;
+  left: 1px;
 }
 .range-controls .toggle-max {
-  left: 248px;
+  left: 56px;
 }
 .toggle:hover {
   -webkit-transform: scale(1.2);
@@ -927,7 +947,7 @@ input[type="checkbox"] {
   width: 137px;
   height: 36px;
   padding: 0px;
-  margin-right: 10px;
+  margin-right: 12px;
   outline: none;
   color: var(--basic-white);
   background-color: transparent;
@@ -949,7 +969,7 @@ input[type="checkbox"] {
   background-color: var(--basic-white);
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: baseline;
 }
 .sorting::after {
   content: "";
@@ -975,22 +995,24 @@ input[type="checkbox"] {
 }
 .sorting-list {
   list-style: none;
-  width: 239px;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 18px;
 }
+.sorting-list li {
+  margin-right: 32px;
+}
 .sorting a:link {
   color: rgba(0,0,0,0.3);
-  border-bottom: 1px dashed #81B3D2;
+  border-bottom: 1px dotted #81B3D2;
 }
 .sorting a:hover {
   color: var(--basic-blue-light);
-  border-bottom: 1px dashed #81B3D2;
+  border-bottom: 1px dotted #81B3D2;
 }
 .sorting a:active {
   color: var(--basic-black);
@@ -1005,17 +1027,17 @@ input[type="checkbox"] {
   height: 21px;
   position: absolute;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   right: 73px;
   color: var(--basic-black);
-  opacity: 0.3;
   border: none;
+  align-self: center;
 }
 .sorting-button a:hover path {
-  fill: var(--basic-blue-light);
+  fill: var(--basic-black);
 }
 .sorting-button a:active path{
-  fill: var(--basic-black);
+  fill: var(--basic-blue-light);
 }
 .sorting-button a:visited path {
   color: var( --basic-blue-light);

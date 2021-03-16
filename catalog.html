@@ -73,11 +73,11 @@
       <fieldset class="filter-item">
         <legend class="titleform">Стоимость в сутки (Р):</legend>
         <div class="price-controls">
-          <label class="min-price">
-            <input type="number" name="min-price" placeholder="от 0">
+          <label>
+            ОТ<input type="number" name="min-price" min="0" max="2999" step="1" placeholder="0">
           </label>
-          <label class="max-price">
-            <input type="number" name="max-price" placeholder="до 3000">
+          <label>
+            ДО<input type="number" name="max-price" placeholder="3000">
           </label>
         </div>
         <div class="range-filter">
@@ -85,8 +85,8 @@
             <div class="scale">
               <div class="bar" style="width: 30%; margin-left: 20%"></div>
             </div>
-            <div class="toggle toggle-min" tabindex="0" style="left: 20%"></div>
-            <div class="toggle toggle-max" tabindex="0" style="left: 50%"></div>
+            <div class="toggle toggle-min" tabindex="0" style="left: 0%"></div>
+            <div class="toggle toggle-max" tabindex="0" style="left: 78%"></div>
           </div>
         </div>
           <button class="button-show" type="button">Показать</button>
