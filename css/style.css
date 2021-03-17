@@ -29,8 +29,7 @@
 }
 .wrapper {
   width 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0px auto;
   box-shadow: 0 5px 15px rgba(0,1,1,0.2);
 }
 a {
@@ -153,6 +152,7 @@ input::-webkit-inner-spin-button {
   width: 1200px;
   height: 509px;
   text-align: center;
+  background-color: var(--basic-blue-dark);
   background-image:url(../img/background_photo.jpg);
   display: flex;
   justify-content: center;
@@ -171,7 +171,6 @@ input::-webkit-inner-spin-button {
   min-height: 125px;
   margin-top: 0px;
   background-color: var(--basic-white);
-  margin-top: 0px;
   padding: 42px 340px 51px;
   display: flex;
   flex-direction: column;
@@ -287,9 +286,7 @@ input::-webkit-inner-spin-button {
   align-items: center;
 }
 .interest p:nth-of-type(1) {
-  margin: 0px;
-  margin-right: 457px;
-  margin-left: 446px;
+  margin: 0px 457px 0px 446px;
   padding: 0px;
   font: 700 30px/24px "PT Sans";
 }
@@ -313,16 +310,14 @@ input::-webkit-inner-spin-button {
   width: 568px;
   height: 86px;
   padding: 0px;
-  margin:0px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0px auto;
   font: 700 21px/26px "PT Sans";
-  text-align: center;
   color: var(--basic-white);
   background-color: var(--basic-brown-light);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 .appointment-title:hover {
   color: var(--basic-white);
@@ -334,13 +329,12 @@ input::-webkit-inner-spin-button {
 }
 .appointment-info  {
   position: absolute;
-  margin-left: 315px;
-  margin-right: 316px;
   padding: 55px;
   width: 458px;
   height: 286px;
-  font: 700 14px/26px "PT Sans";
   background-color: var(--basic-white);
+  margin: 0px 316px 0px 315px;
+  font: 700 14px/26px "PT Sans";
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -355,7 +349,7 @@ input::-webkit-inner-spin-button {
   flex-wrap: wrap;
 }
 .appointment-item label {
-  padding-top: 6px 16px 0px 0px;
+  padding:6px 16px 0px 0px ;
 }
 .appointment-item input {
   position: absolute;
@@ -365,8 +359,8 @@ input::-webkit-inner-spin-button {
   padding: 0px 0px 0px 13px;
   border: 0px;
   outline: none;
-  font: 700 14px/26px "PT Sans";
   background-color: var(--basic-gray-very-light);
+  font: bold 14px/26px "PT Sans";
 }
 .appointment-item input:hover {
   background-color: var(--basic-gray-very-light-light);
@@ -374,8 +368,8 @@ input::-webkit-inner-spin-button {
 .appointment-item input:focus {
   width: 329px;
   height: 34px;
-  border: 2px solid #E5E5E5;
   background-color: var(--basic-white);
+  border: 2px solid #E5E5E5;
 }
 .appointment-item input::-webkit-input-placeholder {color:var(--basic-black);opacity: 1; text-align:start;font-weight: bold;text-transform: uppercase;}
 .appointment-item input::-moz-placeholder          {color:var(--basic-black);opacity: 1; text-align:start;font-weight: bold;text-transform: uppercase;}/* Firefox 19+ */
@@ -416,23 +410,23 @@ input::-webkit-inner-spin-button {
 .svg-change {
   width: 38px;
   height: 38px;
-  border: none;
   fill: var(--basic-gray-light);
+  border: none;
 }
 .svg-change:hover path {
-  border: none;
   fill: var(--basic-black);
+  border: none;
 }
 .svg-change:active path {
+  fill: var(--basic-blue-light);
   border: transparent;
   outline: transparent;
-  fill: var(--basic-blue-light);
 }
 .number .svg-change {
   width: 38px;
   height: 38px;
-  border: none;
   fill: var(--basic-gray-light);
+  border: none;
 }
 .number {
   width: 458px;
@@ -448,10 +442,10 @@ input::-webkit-inner-spin-button {
 .item-number input:-moz-placeholder           {color: var(--basic-black);text-align:center;font-weight: bold;opacity: 1;}/* Firefox 18- */
 .item-number input:-ms-input-placeholder      {color: var(--basic-black);text-align:center;font-weight: bold;opacity: 1;}
 .item-number {
-  color: var(--basic-black)
   margin: 0px;
   padding: 0px;
   font: 700 14px/26px "PT Sans";
+  color: var(--basic-black)
 }
 .adults-number {
   width: 226px;
@@ -478,7 +472,7 @@ input::-webkit-inner-spin-button {
   background-color: var(--basic-gray-very-light);
 }
 .but-min {
-  padding: 0px 0px 4px;
+  padding-bottom: 4px;
 }
 .childrens-number {
   width: 179px;
@@ -491,18 +485,18 @@ input::-webkit-inner-spin-button {
 .childrens-number label {
   margin: 0px;
   padding: 0px 27px 0px 0px;
-  font: 700 14px/26px "PT Sans";
   color: var(--basic-black);
+  font: bold 14px/26px "PT Sans";
 }
 .number input {
   width: 38px;
   height: 38px;
-  padding: 0px;
-  border: 0px;
-  outline: none;
   background-color: var(--basic-gray-very-light);
-  font: 700 14px/26px "PT Sans";
+  border: 0px;
+  padding: 0px;
+  outline: none;
   text-align: center;
+  font:bold 14px/26px "PT Sans";
 }
 .number input:hover {
   background-color: var(--basic-gray-very-light-light);
@@ -518,9 +512,10 @@ input::-webkit-inner-spin-button {
   width: 458px;
   height: 58px;
   border: 0px;
-  padding: 0px 0px 0px 2px;
-  outline: none;
   margin-top: 38px;
+  padding: 0px;
+  padding-left: 2px;
+  outline: none;
   font: 700 21px/26px "PT Sans";
   color: var(--basic-white);
   text-transform: uppercase;
@@ -533,21 +528,17 @@ input::-webkit-inner-spin-button {
   color: rgba(255,255,255,0.3);
   background-color: var(--basic-blue-dark);
 }
-/* Карта */
 .map {
   margin-bottom: -120px;
 }
-/* .modal-map {
-  display: none;
-} */
 /* Подвал */
 .main-footer {
   width: 1200px;
   height: 120px;
   margin-bottom: 0px;
-  color: var(--basic-black);
   background-color: rgba(255, 255, 255, 0.9);
   background-position: 0 0;
+  color: var(--basic-black);
   display: grid;
   grid-template-columns: 400px 400px 400px;
   grid-template-rows: 120px;
@@ -578,9 +569,9 @@ input::-webkit-inner-spin-button {
   align-items: center;
 }
 .social-list {
+  list-style: none;
   margin: 0px;
   padding: 0px;
-  list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -613,14 +604,14 @@ input::-webkit-inner-spin-button {
 .prod {
   grid-column: 3/4;
   grid-row: 1/2;
-  padding: 0px 73px 0px 0px;
+  padding-right: 73px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--basic-black);
 }
 .prod p {
-  padding: 0px 8px 0px 0px;
+  padding-right: 8px;
 }
 .prod a:hover path {
   fill: var(--basic-blue-light);
@@ -628,10 +619,10 @@ input::-webkit-inner-spin-button {
 .prod a:active path {
   fill: var(--basic-graylight-opal);
 }
-
 /* КАТАЛОГ */
 .hostel-catalog {
   width: 1200px;
+  background-color: var(--basic-blue-dark);
   background-image:url(../img/background.jpg);
   color: var(--basic-white);
   display: grid;
@@ -658,9 +649,8 @@ input::-webkit-inner-spin-button {
 }
 .hostel-type {
   grid-column: 2/3;
-  margin: 0px;
+  margin: 0px 0px 0px 119px;
   padding: 24px 0px 32px;
-  margin-left: 119px;
   border: 0px;
   display: flex;
   flex-wrap: wrap;
@@ -731,8 +721,7 @@ input[type="checkbox"] {
 .price-controls {
   width: 313px;
   height: 32px;
-  margin-top: 10px;
-  margin-right: 5px;
+  margin: 10px 5px 0px 0px;
   border: 2px solid var(--basic-white);
   border-radius: 2px;
   font:400 14px/21px "PT Sans";
@@ -750,8 +739,7 @@ input[type="checkbox"] {
   width: 40px;
   height: 32px;
   padding: 0px 0px 4px;
-  margin: 0px;
-  margin-left: 2px;
+  margin: 0px 0px 0px 2px;
   outline: none;
   border: none;
   background-color: transparent;
@@ -760,8 +748,7 @@ input[type="checkbox"] {
 }
 .price-controls label:nth-of-type(1) {
   height: 32px;
-  margin-left: 64px;
-  margin-right: 45px;
+  margin: 0px 64px 0px 45px;
 }
 .price-controls label:nth-of-type(2) {
   margin-left: 45px;
@@ -963,8 +950,7 @@ input[type="checkbox"] {
   grid-column: 2/5;
   grid-row: 1/2;
   width: 260px;
-  margin: 0px;
-  margin-top: -6px;
+  margin: -6px 0px 0px;
   padding: 0px;
   font:700 21px/26px "PT Sans";
   color: var(--basic-black);
@@ -986,8 +972,7 @@ input[type="checkbox"] {
   grid-column: 2/3;
   width: 110px;
   padding: 0px;
-  margin: 0px;
-  margin-top: 6px;
+  margin: 6px 0px 0px;
   text-align: left;
   height: 21px;
   width: 96px;
@@ -997,8 +982,7 @@ input[type="checkbox"] {
   grid-column: 3/4;
   width: 110px;
   height: 43px;
-  margin: 0;
-  margin-top: 6px;
+  margin: 6px 0px 0px;
   padding: 0;
   text-align: left;
 }
