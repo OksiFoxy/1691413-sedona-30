@@ -938,7 +938,6 @@ input[type="checkbox"] {
   height: 1px;
   background-color: var(--basic-gray-line);
   display: block;
-
 }
  .hostel img {
   grid-column: 1/2;
@@ -956,7 +955,6 @@ input[type="checkbox"] {
   color: var(--basic-black);
   text-align: left;
   vertical-align: top;
-
 }
 .hostel-name h2:link {
   color: var(--basic-black);
