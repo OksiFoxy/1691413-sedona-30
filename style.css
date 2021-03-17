@@ -525,6 +525,15 @@ input::-webkit-inner-spin-button {
   text-align: center;
   font:bold 14px/26px "PT Sans";
 }
+.number input:hover {
+  background-color: var(--basic-gray-very-light-light);
+}
+.number input:focus {
+  width: 34px;
+  height: 34px;
+  background-color: var(--basic-white);
+  border: 2px solid #E5E5E5;
+}
 /* Кнопка Найти */
 .button-search {
   width: 458px;
