@@ -391,6 +391,8 @@ input::-webkit-inner-spin-button {
   background-color: var(--basic-gray-very-light-light);
 }
 .appointment-item input:focus {
+  width: 329px;
+  height: 34px;
   background-color: var(--basic-white);
   border: 2px solid #E5E5E5;
 }
