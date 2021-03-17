@@ -4,7 +4,7 @@
 .page-body {
   margin: 0px;
   padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -123,7 +123,7 @@ input::-webkit-inner-spin-button {
   text-align: left;
 }
 .site-nav-list li:nth-of-type(3) {
-  margin-left: 138px;
+  margin-left: 140px;
   text-align: right;
 }
 .site-nav-list li:nth-of-type(4) {
@@ -187,9 +187,7 @@ input::-webkit-inner-spin-button {
 .about-city p:first-of-type {
   margin:0px;
   padding: 0px;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
+  font: 700 21px/26px "PT Sans";
   display: flex;
   justify-content: center;
 }
@@ -197,6 +195,7 @@ input::-webkit-inner-spin-button {
   margin: 0px;
   padding: 0px;
   display: flex;
+  font: 400 14px/26px "PT Sans";
 }
 /* Разделы с преимуществами */
 .features-list {
@@ -232,8 +231,7 @@ input::-webkit-inner-spin-button {
   min-height: 43px;
   padding: 0px;
   margin: 0px;
-  font-size: 21px;
-  font-weight: 700;
+  font: 700 21px/21px "PT Sans";
 }
 .feauteres-item-card p:first-of-type {
   margin: 0px;
@@ -304,13 +302,11 @@ input::-webkit-inner-spin-button {
   position: relative;
 }
 .interest p:nth-of-type(1) {
+  font: 700 30px/24px "PT Sans";
   margin: 0px;
   margin-right: 457px;
   margin-left: 446px;
   padding: 0px;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 24px;
 }
 .interest p:nth-of-type(2) {
   width: 435px;
@@ -328,11 +324,9 @@ input::-webkit-inner-spin-button {
 }
 /* Форма поиска */
 .appointment-title {
+  font: 700 21px/26px "PT Sans";
   width: 568px;
   height: 86px;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
   color: var(--basic-white);
   background-color: var(--basic-brown-light);
   padding: 0px;
@@ -356,9 +350,7 @@ input::-webkit-inner-spin-button {
   background-color: var(--basic-brown-dark);
 }
 .appointment-info  {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 26px;
+  font: 700 14px/26px "PT Sans";
   width: 458px;
   height: 286px;
   background-color: var(--basic-white);
@@ -373,9 +365,7 @@ input::-webkit-inner-spin-button {
 }
 .appointment-item {
   position: relative;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 700;
+  font: 700 14px/26px "PT Sans";
   padding: 0px;
   margin: 0px;
   display: flex;
@@ -386,14 +376,16 @@ input::-webkit-inner-spin-button {
   padding-right: 16px;
 }
 .appointment-item input {
-  width: 346px;
+  width: 333px;
   height: 38px;
   background-color: var(--basic-gray-very-light);
   padding: 0px;
+  padding-left: 13px;
   border: 0px;
   position: absolute;
   right: 0px;
   outline: none;
+  font: bold 14px/26px "PT Sans";
 }
 .appointment-item input:hover {
   background-color: var(--basic-gray-very-light-light);
@@ -402,10 +394,10 @@ input::-webkit-inner-spin-button {
   background-color: var(--basic-white);
   border: 2px solid #E5E5E5;
 }
-.appointment-item input::-webkit-input-placeholder {color: var(--basic-black);text-align:start;font-weight: bold;text-transform: uppercase;padding-left: 13px;}
-.appointment-item input::-moz-placeholder          {color: var(--basic-black);text-align:start;font-weight: bold;text-transform: uppercase;padding-left: 13px;}/* Firefox 19+ */
-.appointment-item input:-moz-placeholder           {color: var(--basic-black);text-align:start;font-weight: bold;text-transform: uppercase;padding-left: 13px;}/* Firefox 18- */
-.appointment-item input:-ms-input-placeholder      {color: var(--basic-black);text-align:start;font-weight: bold;text-transform: uppercase;padding-left: 13px;}
+.appointment-item input::-webkit-input-placeholder {color:var(--basic-black);opacity: 1; text-align:start;font-weight: bold;text-transform: uppercase;}
+.appointment-item input::-moz-placeholder          {color:var(--basic-black);opacity: 1; text-align:start;font-weight: bold;text-transform: uppercase;}/* Firefox 19+ */
+.appointment-item input:-moz-placeholder           {color:var(--basic-black);opacity: 1; text-align:start;font-weight: bold;text-transform: uppercase;}/* Firefox 18- */
+.appointment-item input:-ms-input-placeholder      {color:var(--basic-black);opacity: 1; text-align:start;font-weight: bold;text-transform: uppercase;}
 
  .but-call-arrival {
   background-color: transparent;
@@ -438,54 +430,6 @@ input::-webkit-inner-spin-button {
   top: 124px;
   right: 55px;
 }
-.but-plus-adults  {
-  background-color: transparent;
-  width: 11px;
-  height: 11px;
-  border: 0px;
-  padding: 0px;
-  margin: 0px;
-  outline: none;
-  position: absolute;
-  bottom: 167px;
-  right: 286px;
-}
-.but-min-adults {
-  background-color: transparent;
-  width: 11px;
-  height: 11px;
-  border: 0px;
-  padding: 0px;
-  margin: 0px;
-  outline: none;
-  position: absolute;
-  bottom: 170px;
-  right: 360px;
-}
-.but-min-children {
-  background-color: transparent;
-  width: 11px;
-  height: 11px;
-  border: 0px;
-  padding: 0px;
-  margin: 0px;
-  outline: none;
-  position: absolute;
-  bottom: 170px;
-  right: 130px;
-}
-.but-plus-children {
-  background-color: transparent;
-  width: 11px;
-  height: 11px;
-  border: 0px;
-  padding: 0px;
-  margin: 0px;
-  outline: none;
-  position: absolute;
-  bottom: 167px;
-  right: 53px;
-}
 .svg-change {
   width: 38px;
   height: 38px;
@@ -516,49 +460,51 @@ input::-webkit-inner-spin-button {
   justify-content: space-between;
   flex-wrap: nowrap;
 }
-.item-number input::-webkit-input-placeholder {color: var(--basic-black);text-align:center;font-weight: bold;}
-.item-number input::-moz-placeholder          {color: var(--basic-black);text-align:center;font-weight: bold;}/* Firefox 19+ */
-.item-number input:-moz-placeholder           {color: var(--basic-black);text-align:center;font-weight: bold;}/* Firefox 18- */
-.item-number input:-ms-input-placeholder      {color: var(--basic-black);text-align:center;font-weight: bold;}
-
+.item-number input::-webkit-input-placeholder {color: var(--basic-black);text-align:center;font-weight: bold;opacity: 1;}
+.item-number input::-moz-placeholder          {color: var(--basic-black);text-align:center;font-weight: bold;opacity: 1;}/* Firefox 19+ */
+.item-number input:-moz-placeholder           {color: var(--basic-black);text-align:center;font-weight: bold;opacity: 1;}/* Firefox 18- */
+.item-number input:-ms-input-placeholder      {color: var(--basic-black);text-align:center;font-weight: bold;opacity: 1;}
 .item-number {
+  color: var(--basic-black)
   margin: 0px;
   padding: 0px;
-  font-family: "PT Sans", sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  font-style: normal;
+  font: 700 14px/26px "PT Sans";
 }
-::-webkit-input-placeholder {color: var(--basic-black);text-align:center;font-weight: bold;}
-::-moz-placeholder          {color: var(--basic-black);text-align:center;font-weight: bold;}/* Firefox 19+ */
-:-moz-placeholder           {color: var(--basic-black);text-align:center;font-weight: bold;}/* Firefox 18- */
-:-ms-input-placeholder      {color: var(--basic-black);text-align:center;font-weight: bold;}
-
 .adults-number {
-  width: 230px;
+  width: 226px;
   margin: 0px;
   padding: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-}
-.childrens-number {
-  width: 230px;
-  margin: 0px;
-  padding: 0px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  position: relative;
 }
 .adults-number label {
   margin: 0px;
   padding: 0px;
-  padding-right: 35px;
+  padding-right: 41px;
   color: var(--basic-black);
   font: bold 14px/26px "PT Sans";
+}
+.but-plus,
+.but-min {
+  background-color: var(--basic-gray-very-light);
+  width: 38px;
+  height: 38px;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+}
+.but-min {
+  padding-bottom: 4px;
+}
+.childrens-number {
+  width: 179px;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .childrens-number label {
   margin: 0px;
@@ -566,27 +512,6 @@ input::-webkit-inner-spin-button {
   padding-right: 27px;
   color: var(--basic-black);
   font: bold 14px/26px "PT Sans";
-
-}
-::-webkit-input-placeholder {
-  color: var(--basic-black);
-  text-align:center;
-  font: bold 14px/26px "PT Sans";
-}
-::-moz-placeholder          {
-  color: var(--basic-black);
-  text-align:center;
-  font: bold 14px/26px "PT Sans";
-}/* Firefox 19+ */
-:-moz-placeholder           {
-  color: var(--basic-black);
-  text-align:center;
-  font: bold 14px/26px "PT Sans";
-}/* Firefox 18- */
-:-ms-input-placeholder      {
-  color: var(--basic-black);
-  text-align:center;
-  font:bold 14px/26px "PT Sans";
 }
 .number input {
   width: 38px;
@@ -595,33 +520,7 @@ input::-webkit-inner-spin-button {
   border: 0px;
   padding: 0px;
   outline: none;
-  padding-left: 38px;
-  padding-right: 38px;
   text-align: center;
-}
-::-webkit-input-placeholder {
-  color: var(--basic-black);
-  text-align:center;
-  font: bold 14px/26px "PT Sans";
-}
-::-moz-placeholder          {
-  color: var(--basic-black);
-  text-align:center;
-  font: bold 14px/26px "PT Sans";
-}/* Firefox 19+ */
-:-moz-placeholder           {
-  color: var(--basic-black);
-  text-align:center;
-  font: bold 14px/26px "PT Sans";
-}/* Firefox 18- */
-:-ms-input-placeholder      {
-  color: var(--basic-black);
-  text-align:center;
-  font:bold 14px/26px "PT Sans";
-}
-.number .item-number input {
-  color: var(--basic-black);
-  text-align:center;
   font:bold 14px/26px "PT Sans";
 }
 /* Кнопка Найти */
@@ -633,8 +532,7 @@ input::-webkit-inner-spin-button {
   outline: none;
   padding-left: 2px;
   margin-top: 38px;
-  font-size: 21px;
-  font-weight: 700;
+  font: 700 21px/26px "PT Sans";
   color: var(--basic-white);
   text-transform: uppercase;
   background-color: var(--basic-blue);
@@ -673,9 +571,8 @@ input::-webkit-inner-spin-button {
   align-items: center;
 }
 .footer-contacts p {
+  font: 700 21px/26px "PT Sans";
   margin: 0px;
-  font-size: 21px;
-  font-weight: 700;
   text-align: center;
   vertical-align: middle;
 }
@@ -808,9 +705,8 @@ color: rgba(255,255,255,0.3);
   position: relative;
 }
 .titleform {
+  font: 700 16px/21px "PT Sans";
   text-align: start;
-  font-size: 16px;
-  font-weight: 700;
   margin: 0px;
   padding: 0px;
   padding-top: 26px;
@@ -859,29 +755,31 @@ input[type="checkbox"] {
   border: 2px solid var(--basic-white);
   border-radius: 2px;
   margin-right: 5px;
-  font-weight: bold;
+  vertical-align: middle;
+  font:400 14px/21px "PT Sans";
 }
-::-webkit-input-placeholder {text-align:center;color: var(--basic-white);text-transform: uppercase;text-align: start;}
-::-moz-placeholder          {text-align:center;color: var(--basic-white);text-transform: uppercase;text-align: start;}/* Firefox 19+ */
-:-moz-placeholder           {text-align:center;color: var(--basic-white);text-transform: uppercase;text-align: start;}/* Firefox 18- */
-:-ms-input-placeholder      {text-align:center;color: var(--basic-white);text-transform: uppercase;text-align: start;}
+.price-controls input::-webkit-input-placeholder {color: var(--basic-white);opacity: 1; text-transform: uppercase;text-align: start;}
+.price-controls input::-moz-placeholder          {color: var(--basic-white);opacity: 1;text-transform: uppercase;text-align: start;vertical-align: middle;}/* Firefox 19+ */
+.price-controls input:-moz-placeholder           {color: var(--basic-white);opacity: 1;text-transform: uppercase;text-align: start;vertical-align: middle;}/* Firefox 18- */
+.price-controls input:-ms-input-placeholder      {color: var(--basic-white);opacity: 1;text-transform: uppercase;text-align: start;}
 
 .price-controls input {
   width: 40px;
-  height: 21px;
-  font-weight: bold;
+  height: 32px;
   color: var(--basic-white);
   background-color: transparent;
   outline: none;
   border: none;
   padding: 0px;
-  padding-top: 3px;
+  padding-bottom: 4px;
+  margin: 0px;
   margin-left: 2px;
+  font:400 14px/21px "PT Sans";
 }
 .price-controls label:nth-of-type(1) {
+  height: 32px;
   margin-left: 64px;
   margin-right: 45px;
-  font: inherit;
 }
 .price-controls label:nth-of-type(2) {
   margin-left: 45px;
@@ -906,6 +804,7 @@ input[type="checkbox"] {
 }
 .range-controls {
   margin: 0px;
+  padding: 0px;
   width: 319px;
   position: relative;
   height: 19px;
@@ -955,6 +854,7 @@ input[type="checkbox"] {
   border-radius: 2px;
   text-align: center;
   text-transform: uppercase;
+  font:14px/21px "PT Sans";
 }
 .button-show:hover {
   color: var(--basic-black);
@@ -978,47 +878,41 @@ input[type="checkbox"] {
   background-color: var(--basic-gray-line);
   display: block;
   position: absolute;
-  left: -0px;
+  left: 0px;
   bottom: 0;
 }
 .sorting-title {
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 400;
+  font:400 12px/18px "PT Sans";
 }
 .sorting-result {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
+  font:700 21px/26px "PT Sans";
   order: -1;
   margin-right: 46px;
 }
 .sorting-list {
   list-style: none;
+  margin-top: 30px;
   display: flex;
   justify-content: start;
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 18px;
+  align-items: flex-end;
+  font:12px/18px "PT Sans";
 }
 .sorting-list li {
   margin-right: 32px;
 }
-.sorting a:link {
+.sorting-list a:link {
   color: rgba(0,0,0,0.3);
   border-bottom: 1px dotted #81B3D2;
 }
-.sorting a:hover {
+.sorting-list a:hover {
   color: var(--basic-blue-light);
   border-bottom: 1px dotted #81B3D2;
 }
-.sorting a:active {
+.sorting-list a:active {
   color: var(--basic-black);
   border-bottom: none;
 }
-.sorting a:visited {
+.sorting-list a:visited {
   color: var( --basic-blue-light);
   border-bottom: none;
 }
@@ -1047,7 +941,6 @@ input[type="checkbox"] {
   padding-left: 73px;
   padding-right: 73px;
   background-color: var(--basic-white);
-  width: ;
 }
 .hostel-one {
   grid-row: 1/2;
@@ -1066,7 +959,7 @@ input[type="checkbox"] {
   padding-top: 30px;
   padding-bottom: 30px;
   grid-template-columns: 164px 116px 142px 522px 110px;
-  grid-template-rows: 30px 32px 28px;
+  grid-template-rows: 20px 43px 27px;
   border-bottom: 1px #333333;
   position: relative;
 }
@@ -1087,9 +980,8 @@ input[type="checkbox"] {
 }
 /* Имя отеля */
 .hostel-name h2 {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
+  width: 260px;
+  font:700 21px/26px "PT Sans";
   color: var(--basic-black);
   margin: 0px;
   padding: 0px;
@@ -1097,7 +989,6 @@ input[type="checkbox"] {
   vertical-align: top;
   grid-column: 2/5;
   grid-row: 1/2;
-  width: 260px;
   margin-top: -6px;
 }
 .hostel-name h2:link {
@@ -1110,8 +1001,10 @@ input[type="checkbox"] {
   color: rgba(0,0,0,0.3);
 }
 .type-hostel {
+  width: 110px;
   padding: 0px;
   margin: 0px;
+  margin-top: 6px;
   text-align: left;
   grid-row: 2/3;
   grid-column: 2/3;
@@ -1120,20 +1013,18 @@ input[type="checkbox"] {
 }
 .hostel .price {
   width: 110px;
-  height: 21px;
+  height: 43px;
   margin: 0;
   padding: 0;
+  margin-top: 6px;
   text-align: left;
   grid-row: 2/3;
   grid-column: 3/4;
 }
 /* Кнопка подробнее */
 .details {
-  font-family: PT Sans;
   font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 21px;
+  font: 700 14px/21px "PT Sans";
   width: 110px;
   height: 27px;
   color: var(--basic-white);
@@ -1154,11 +1045,7 @@ input[type="checkbox"] {
 }
 /* Забронировать */
 .to-book {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 21px;
+  font: 700 14px/21px "PT Sans";
   width: 142px;
   height: 27px;
   color: var(--basic-white);
@@ -1198,5 +1085,5 @@ input[type="checkbox"] {
   height: 17px;
   background-image: url(img/stars.png);
   background-size: cover;
-  margin-left: 5px;
+  margin-left: 6px;
 }
