@@ -616,9 +616,10 @@ input::-webkit-inner-spin-button {
 }
 .social-button:active {
   background-color: var(--basic-blue-dark);
+  color: rgba(255,255,255,0.3);
 }
-.social-button:active img {
-color: rgba(255,255,255,0.3);
+.social-button a:active path {
+  fill: rgba(255,255,255,0.3);
 }
 .prod {
   padding-right: 73px;
@@ -636,7 +637,7 @@ color: rgba(255,255,255,0.3);
   fill: var(--basic-blue-light);
 }
 .prod a:active path {
-  fill: var(--basic-orign-black);
+  fill: var(--basic-graylight-opal);
 }
 
 /* КАТАЛОГ */
