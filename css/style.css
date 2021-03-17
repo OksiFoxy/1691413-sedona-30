@@ -91,16 +91,13 @@ input::-webkit-inner-spin-button {
 }
 /* Навигация */
 .main-navigation {
-  width: 1200px;
-  height: 56px;
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 26px;
-  color: var(--basic-black);
-  background-color: var(--basic-white);
   position: relative;
   display: flex;
+  width: 1200px;
+  height: 56px;
+  font: 700 14px/26px "PT Sans";
+  color: var(--basic-black);
+  background-color: var(--basic-white);
 }
 .site-nav-list {
   width: 1200px;
@@ -130,9 +127,9 @@ input::-webkit-inner-spin-button {
   text-align: right;
 }
 .main-header-logo {
+  position: absolute;
   width: 138px;
   height: 70px;
-  position: absolute;
   margin-left: 531px;
   display: flex;
   flex-direction: column;
@@ -155,22 +152,24 @@ input::-webkit-inner-spin-button {
 .logo-index {
   width: 1200px;
   height: 509px;
+  text-align: center;
   background-image:url(../img/background_photo.jpg);
   display: flex;
   justify-content: center;
-  text-align: center;
+
 }
 .logo-index::after {
+  position: absolute;
+  top: 509px;
   content: url(../img/whiteshape.png);
   width: 1200px;
   height: 57px;
-  position: absolute;
-  top: 509px;
 }
 /* Преимущества */
 .about-city {
   width: 520px;
   min-height: 125px;
+  margin-top: 0px;
   background-color: var(--basic-white);
   margin-top: 0px;
   padding: 42px 340px 51px;
@@ -190,8 +189,8 @@ input::-webkit-inner-spin-button {
 .about-city p:last-of-type {
   margin: 0px;
   padding: 0px;
-  display: flex;
   font: 400 14px/26px "PT Sans";
+  display: flex;
 }
 /* Разделы с преимуществами */
 .features-list {
@@ -203,22 +202,22 @@ input::-webkit-inner-spin-button {
   grid-template-rows: 256px 330px 256px 256px ;
 }
 .features-list li:first-of-type {
-  color: var(--basic-white);
-  background-color: var(--basic-blue-light);
   grid-column: 1/4;
   grid-row: 1/2;
+  color: var(--basic-white);
+  background-color: var(--basic-blue-light);
   display: grid;
   grid-template-columns: 400px 800px;
 }
 .feauteres-item-card {
   width: 400px;
+  margin: 0px;
+  padding: 50px 0px 54px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 0px;
-  padding: 50px 0px 54px;
 }
 .feauteres-item-card h3:only-of-type {
   width: 151px;
@@ -228,48 +227,48 @@ input::-webkit-inner-spin-button {
   font: 700 21px/21px "PT Sans";
 }
 .feauteres-item-card p:first-of-type {
-  margin: 0px;
-  padding: 0px;
   width: 300px;
   min-height: 21px;
+  margin: 0px;
+  padding: 0px;
   justify-content: center;
 }
 .feauteres-item-card p:last-of-type {
-  margin: 0px;
-  padding: 0px;
   width: 300px;
   min-height: 43px;
+  margin: 0px;
+  padding: 0px;
 }
 .feauteres-item-card:nth-of-type(2),
 .feauteres-item-card:nth-of-type(3),
 .feauteres-item-card:nth-of-type(4) {
   width: 400px;
   min-height: 188px;
-  background-color: var(--basic-white);
   padding: 60px 0px 82px;
+  background-color: var(--basic-white);
 }
 .feauteres-item-card:nth-of-type(4) {
   width: 400px;
   height: 193px;
-  background-color: var(--basic-white);
   padding: 56px 0px 81px;
+  background-color: var(--basic-white);
 }
 .feauteres-item-card img {
   padding-top: -4px;
   margin-bottom: 27px;
 }
 .features-list li:nth-child(5) {
+  grid-column: 1/4;
   color: var(--basic-white);
   background-color: var(--basic-blue-light);
-  grid-column: 1/4;
   display: grid;
   grid-template-columns: 800px 400px;
 }
 .feauteres-item-card:nth-of-type(5) {
-  color: var(--basic-white);
   width: 400px;
   height: 155px;
   padding: 50px 0px 51px;
+  color: var(--basic-white);
 }
 .features-list li:nth-child(6),
 .features-list li:nth-child(7),
@@ -277,6 +276,7 @@ input::-webkit-inner-spin-button {
   background-color: var(--basic-graylight-original);
 }
 .interest {
+  position: relative;
   height: 97px;
   margin: 0px;
   padding: 58px 0px 136px;
@@ -285,14 +285,13 @@ input::-webkit-inner-spin-button {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  position: relative;
 }
 .interest p:nth-of-type(1) {
-  font: 700 30px/24px "PT Sans";
   margin: 0px;
   margin-right: 457px;
   margin-left: 446px;
   padding: 0px;
+  font: 700 30px/24px "PT Sans";
 }
 .interest p:nth-of-type(2) {
   width: 435px;
@@ -300,7 +299,6 @@ input::-webkit-inner-spin-button {
   padding: 0px;
   padding-top: 32px;
   line-height: 24px;
-  text-align: ;
 }
 .interest p:nth-of-type(3) {
   width: 435px;
@@ -310,22 +308,21 @@ input::-webkit-inner-spin-button {
 }
 /* Форма поиска */
 .appointment-title {
-  font: 700 21px/26px "PT Sans";
+  position: absolute;
+  bottom: 0px;
   width: 568px;
   height: 86px;
-  color: var(--basic-white);
-  background-color: var(--basic-brown-light);
   padding: 0px;
   margin:0px;
   margin-left: auto;
   margin-right: auto;
-  position: absolute;
-  bottom: 0px;
-
+  font: 700 21px/26px "PT Sans";
+  text-align: center;
+  color: var(--basic-white);
+  background-color: var(--basic-brown-light);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
 }
 .appointment-title:hover {
   color: var(--basic-white);
@@ -336,14 +333,14 @@ input::-webkit-inner-spin-button {
   background-color: var(--basic-brown-dark);
 }
 .appointment-info  {
-  font: 700 14px/26px "PT Sans";
-  width: 458px;
-  height: 286px;
-  background-color: var(--basic-white);
+  position: absolute;
   margin-left: 315px;
   margin-right: 316px;
-  position: absolute;
   padding: 55px;
+  width: 458px;
+  height: 286px;
+  font: 700 14px/26px "PT Sans";
+  background-color: var(--basic-white);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -351,9 +348,9 @@ input::-webkit-inner-spin-button {
 }
 .appointment-item {
   position: relative;
-  font: 700 14px/26px "PT Sans";
   padding: 0px;
   margin: 0px;
+  font: 700 14px/26px "PT Sans";
   display: flex;
   flex-wrap: wrap;
 }
@@ -361,15 +358,15 @@ input::-webkit-inner-spin-button {
   padding-top: 6px 16px 0px 0px;
 }
 .appointment-item input {
-  width: 333px;
-  height: 38px;
-  background-color: var(--basic-gray-very-light);
-  padding: 0px 0px 0px 13px;
-  border: 0px;
   position: absolute;
   right: 0px;
+  width: 333px;
+  height: 38px;
+  padding: 0px 0px 0px 13px;
+  border: 0px;
   outline: none;
-  font: bold 14px/26px "PT Sans";
+  font: 700 14px/26px "PT Sans";
+  background-color: var(--basic-gray-very-light);
 }
 .appointment-item input:hover {
   background-color: var(--basic-gray-very-light-light);
@@ -377,8 +374,8 @@ input::-webkit-inner-spin-button {
 .appointment-item input:focus {
   width: 329px;
   height: 34px;
-  background-color: var(--basic-white);
   border: 2px solid #E5E5E5;
+  background-color: var(--basic-white);
 }
 .appointment-item input::-webkit-input-placeholder {color:var(--basic-black);opacity: 1; text-align:start;font-weight: bold;text-transform: uppercase;}
 .appointment-item input::-moz-placeholder          {color:var(--basic-black);opacity: 1; text-align:start;font-weight: bold;text-transform: uppercase;}/* Firefox 19+ */
@@ -386,16 +383,16 @@ input::-webkit-inner-spin-button {
 .appointment-item input:-ms-input-placeholder      {color:var(--basic-black);opacity: 1; text-align:start;font-weight: bold;text-transform: uppercase;}
 
  .but-call-arrival {
-  background-color: transparent;
+  position: absolute;
+  top: 56px;
+  right: 55px;
   width: 22px;
   height: 23px;
   border: 0px;
   padding: 0px;
   margin: 0px;
   outline: none;
-  position: absolute;
-  top: 56px;
-  right: 55px;
+  background-color: transparent;
   color: var(--basic-gray-light);
 }
 .but-call-arrival:focus {
@@ -405,37 +402,37 @@ input::-webkit-inner-spin-button {
   color: var(--basic-blue);
 }
 .but-call-departure {
-  background-color: transparent;
+  position: absolute;
+  top: 124px;
+  right: 55px;
   width: 22px;
   height: 23px;
   border: 0px;
   padding: 0px;
   margin: 0px;
   outline: none;
-  position: absolute;
-  top: 124px;
-  right: 55px;
+  background-color: transparent;
 }
 .svg-change {
   width: 38px;
   height: 38px;
-  fill: var(--basic-gray-light);
   border: none;
+  fill: var(--basic-gray-light);
 }
 .svg-change:hover path {
-  fill: var(--basic-black);
   border: none;
+  fill: var(--basic-black);
 }
 .svg-change:active path {
-  fill: var(--basic-blue-light);
   border: transparent;
   outline: transparent;
+  fill: var(--basic-blue-light);
 }
 .number .svg-change {
   width: 38px;
   height: 38px;
-  fill: var(--basic-gray-light);
   border: none;
+  fill: var(--basic-gray-light);
 }
 .number {
   width: 458px;
@@ -467,18 +464,18 @@ input::-webkit-inner-spin-button {
 .adults-number label {
   margin: 0px;
   padding: 0px 41px 0px 0px;
-  color: var(--basic-black);
   font: bold 14px/26px "PT Sans";
+  color: var(--basic-black);
 }
 .but-plus,
 .but-min {
-  background-color: var(--basic-gray-very-light);
   width: 38px;
   height: 38px;
   border: 0px;
   padding: 0px;
   margin: 0px;
   outline: none;
+  background-color: var(--basic-gray-very-light);
 }
 .but-min {
   padding: 0px 0px 4px;
@@ -494,18 +491,18 @@ input::-webkit-inner-spin-button {
 .childrens-number label {
   margin: 0px;
   padding: 0px 27px 0px 0px;
+  font: 700 14px/26px "PT Sans";
   color: var(--basic-black);
-  font: bold 14px/26px "PT Sans";
 }
 .number input {
   width: 38px;
   height: 38px;
-  background-color: var(--basic-gray-very-light);
-  border: 0px;
   padding: 0px;
+  border: 0px;
   outline: none;
+  background-color: var(--basic-gray-very-light);
+  font: 700 14px/26px "PT Sans";
   text-align: center;
-  font:bold 14px/26px "PT Sans";
 }
 .number input:hover {
   background-color: var(--basic-gray-very-light-light);
@@ -513,8 +510,8 @@ input::-webkit-inner-spin-button {
 .number input:focus {
   width: 34px;
   height: 34px;
-  background-color: var(--basic-white);
   border: 2px solid #E5E5E5;
+  background-color: var(--basic-white);
 }
 /* Кнопка Найти */
 .button-search {
@@ -536,13 +533,13 @@ input::-webkit-inner-spin-button {
   color: rgba(255,255,255,0.3);
   background-color: var(--basic-blue-dark);
 }
-.map {
-  margin-bottom: -125px;
-}
 /* Карта */
-.modal-map {
-  display: none;
+.map {
+  margin-bottom: -120px;
 }
+/* .modal-map {
+  display: none;
+} */
 /* Подвал */
 .main-footer {
   width: 1200px;
@@ -556,34 +553,34 @@ input::-webkit-inner-spin-button {
   grid-template-rows: 120px;
 }
 .footer-contacts {
-  padding: 26px 0px 36px 73px;
   grid-column: 1/2;
   grid-row: 1/2;
+  padding: 26px 0px 36px 73px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 .footer-contacts p {
-  font: 700 21px/26px "PT Sans";
   margin: 0px;
+  font: 700 21px/26px "PT Sans";
   text-align: center;
   vertical-align: middle;
 }
 .social {
+  grid-column: 2/3;
+  grid-row: 1/2;
   margin: 0;
   padding: 0;
   list-style: none;
-  grid-column: 2/3;
-  grid-row: 1/2;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .social-list {
-  list-style: none;
   margin: 0px;
   padding: 0px;
+  list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -614,9 +611,9 @@ input::-webkit-inner-spin-button {
   fill: rgba(255,255,255,0.3);
 }
 .prod {
-  padding: 0px 73px 0px 0px;
   grid-column: 3/4;
   grid-row: 1/2;
+  padding: 0px 73px 0px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -645,14 +642,14 @@ input::-webkit-inner-spin-button {
   grid-column: 1/2;
   margin: 0px;
   padding: 24px 0px 32px 73px;
+  border: 0px;
   display: flex;
   flex-wrap: wrap;
-  border: 0px;
 }
 .hostel-infrastructure ul {
-  list-style: none;
   margin: 0px;
   padding: 0px;
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -664,15 +661,15 @@ input::-webkit-inner-spin-button {
   margin: 0px;
   padding: 24px 0px 32px;
   margin-left: 119px;
+  border: 0px;
   display: flex;
   flex-wrap: wrap;
-  border: 0px;
 }
 .hostel-type ul {
   width: 125px;
-  list-style: none;
   margin: 0px;
   padding: 0px;
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -681,21 +678,21 @@ input::-webkit-inner-spin-button {
 }
 .filter-item {
   grid-column: 4/5;
+  position: relative;
+  margin: 0px;
+  padding: 0px 73px 32px 10px;
+  border: 0px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: 0px;
-  padding: 0px 73px 32px 10px;
-  border: 0px;
-  position: relative;
 }
 .titleform {
-  font: 700 16px/21px "PT Sans";
-  text-align: start;
   margin: 0px;
   padding: 26px 0px 0px 0px;
+  font: 700 16px/21px "PT Sans";
+  text-align: start;
 }
 .filter-option label {
   position: relative;
@@ -732,17 +729,17 @@ input[type="checkbox"] {
   margin-left: 39px;
 }
 .price-controls {
-  display: flex;
-  flex-wrap: nowrap;
-  color: var(--basic-white);
   width: 313px;
   height: 32px;
   margin-top: 10px;
+  margin-right: 5px;
   border: 2px solid var(--basic-white);
   border-radius: 2px;
-  margin-right: 5px;
-  vertical-align: middle;
   font:400 14px/21px "PT Sans";
+  color: var(--basic-white);
+  display: flex;
+  flex-wrap: nowrap;
+  vertical-align: middle;
 }
 .price-controls input::-webkit-input-placeholder {color: var(--basic-white);opacity: 1;text-transform: uppercase;text-align: start;}
 .price-controls input::-moz-placeholder          {color: var(--basic-white);opacity: 1;text-transform: uppercase;text-align: start;vertical-align: middle;}/* Firefox 19+ */
@@ -752,14 +749,14 @@ input[type="checkbox"] {
 .price-controls input {
   width: 40px;
   height: 32px;
-  color: var(--basic-white);
-  background-color: transparent;
-  outline: none;
-  border: none;
   padding: 0px 0px 4px;
   margin: 0px;
   margin-left: 2px;
+  outline: none;
+  border: none;
+  background-color: transparent;
   font:400 14px/21px "PT Sans";
+  color: var(--basic-white);
 }
 .price-controls label:nth-of-type(1) {
   height: 32px;
@@ -780,19 +777,19 @@ input[type="checkbox"] {
   transform: translateX(-50%) translateY(-50%);
 }
 .range-filter{
+  position: relative;
   margin: 0px;
   padding: 0px;
-  position: relative;
 }
 .range-max {
   position: absolute;
 }
 .range-controls {
+  position: relative;
+  width: 319px;
+  height: 19px;
   margin: 0px;
   padding: 0px;
-  width: 319px;
-  position: relative;
-  height: 19px;
 }
 .range-controls .scale {
   height: 2px;
@@ -811,8 +808,8 @@ input[type="checkbox"] {
   height: 4px;
   padding: 0;
   border: 8px solid #ffffff;
-  background-color: var(--basic-graylight);
   border-radius: 50%;
+  background-color: var(--basic-graylight);
   box-shadow: 0 2px 1px 0 #cfcfcf;
   cursor: pointer;
 }
@@ -832,14 +829,14 @@ input[type="checkbox"] {
   height: 36px;
   padding: 0px;
   margin-right: 12px;
-  outline: none;
-  color: var(--basic-white);
-  background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
+  outline: none;
+  background-color: transparent;
+  font:14px/21px "PT Sans";
+  color: var(--basic-white);
   text-align: center;
   text-transform: uppercase;
-  font:14px/21px "PT Sans";
 }
 .button-show:hover {
   color: var(--basic-black);
@@ -847,9 +844,9 @@ input[type="checkbox"] {
 }
 /* Сортировка */
 .sorting {
-  padding: 0px 73px;
   position: relative;
   height: 86px;
+  padding: 0px 73px;
   background-color: var(--basic-white);
   display: flex;
   justify-content: flex-start;
@@ -857,29 +854,30 @@ input[type="checkbox"] {
 }
 .sorting::after {
   content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0;
   width: 1200px;
   height: 1px;
   background-color: var(--basic-gray-line);
   display: block;
-  position: absolute;
-  left: 0px;
-  bottom: 0;
+
 }
 .sorting-title {
   font:400 12px/18px "PT Sans";
 }
 .sorting-result {
-  font:700 21px/26px "PT Sans";
   order: -1;
   margin-right: 46px;
+  font:700 21px/26px "PT Sans";
 }
 .sorting-list {
-  list-style: none;
   margin-top: 30px;
+  font:12px/18px "PT Sans";
+  list-style: none;
   display: flex;
   justify-content: start;
   align-items: flex-end;
-  font:12px/18px "PT Sans";
 }
 .sorting-list li {
   margin-right: 32px;
@@ -901,14 +899,14 @@ input[type="checkbox"] {
   border-bottom: none;
 }
 .sorting-button {
+  position: absolute;
+  right: 73px;
   width: 34px;
   height: 21px;
-  position: absolute;
+  border: none;
+  color: var(--basic-black);
   display: flex;
   justify-content: space-between;
-  right: 73px;
-  color: var(--basic-black);
-  border: none;
   align-self: center;
 }
 .sorting-button a:hover path {
@@ -935,42 +933,44 @@ input[type="checkbox"] {
   grid-row: 3/4;
 }
 .hostel {
+  position: relative;
   height: 91px;
   padding: 30px 0px;
   margin: 0px;
+  border-bottom: 1px #333333;
   display: grid;
   grid-template-columns: 164px 116px 142px 522px 110px;
   grid-template-rows: 20px 43px 27px;
-  border-bottom: 1px #333333;
-  position: relative;
 }
 .hostel::after {
   content: "";
+  position: absolute;
+  left: -73px;
+  bottom: 0;
   width: 1200px;
   height: 1px;
   background-color: var(--basic-gray-line);
   display: block;
-  position: absolute;
-  left: -73px;
-  bottom: 0;
+
 }
  .hostel img {
-  margin: 0px;
   grid-column: 1/2;
   grid-row: 1/4;
+  margin: 0px;
 }
 /* Имя отеля */
 .hostel-name h2 {
-  width: 260px;
-  font:700 21px/26px "PT Sans";
-  color: var(--basic-black);
-  margin: 0px;
-  padding: 0px;
-  text-align: left;
-  vertical-align: top;
   grid-column: 2/5;
   grid-row: 1/2;
+  width: 260px;
+  margin: 0px;
   margin-top: -6px;
+  padding: 0px;
+  font:700 21px/26px "PT Sans";
+  color: var(--basic-black);
+  text-align: left;
+  vertical-align: top;
+
 }
 .hostel-name h2:link {
   color: var(--basic-black);
@@ -982,36 +982,35 @@ input[type="checkbox"] {
   color: rgba(0,0,0,0.3);
 }
 .type-hostel {
+  grid-row: 2/3;
+  grid-column: 2/3;
   width: 110px;
   padding: 0px;
   margin: 0px;
   margin-top: 6px;
   text-align: left;
-  grid-row: 2/3;
-  grid-column: 2/3;
   height: 21px;
   width: 96px;
 }
 .hostel .price {
+  grid-row: 2/3;
+  grid-column: 3/4;
   width: 110px;
   height: 43px;
   margin: 0;
-  padding: 0;
   margin-top: 6px;
+  padding: 0;
   text-align: left;
-  grid-row: 2/3;
-  grid-column: 3/4;
 }
 /* Кнопка подробнее */
 .details {
-  font-style: normal;
-  font: 700 14px/21px "PT Sans";
-  width: 110px;
-  height: 27px;
-  color: var(--basic-white);
-  background-color: var(--basic-blue-light);
   grid-column: 2/3;
   grid-row: 3/4;
+  width: 110px;
+  height: 27px;
+  background-color: var(--basic-blue-light);
+  font: 700 14px/21px "PT Sans";
+  color: var(--basic-white);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1026,13 +1025,13 @@ input[type="checkbox"] {
 }
 /* Забронировать */
 .to-book {
-  font: 700 14px/21px "PT Sans";
-  width: 142px;
-  height: 27px;
-  color: var(--basic-white);
-  background-color: var(--basic-brown-light);
   grid-column: 3/4;
   grid-row: 3/4;
+  width: 142px;
+  height: 27px;
+  background-color: var(--basic-brown-light);
+  font: 700 14px/21px "PT Sans";
+  color: var(--basic-white);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1046,11 +1045,11 @@ input[type="checkbox"] {
   background-color: var(--basic-brown-dark);
 }
 .rating {
+  grid-column: -2/-1;
+  grid-row: -2/-1;
   width: 110px;
   height: 27px;
   background-color: var(--basic-gray-very-light);
-  grid-column: -2/-1;
-  grid-row: -2/-1;
   display: flex;
   justify-content: center;
   align-items: center;
