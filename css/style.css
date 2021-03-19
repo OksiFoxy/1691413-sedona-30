@@ -63,6 +63,7 @@ input::-webkit-inner-spin-button {
   --basic-dark-black: #333333;
   --basic-orign-black:#231F20;
   --basic-white: #ffffff;
+  --basic-checkbox-disabled: #6A6A6A;
 
   --basic-brown-light: #766357;
   --basic-brown:  #604E43;
@@ -348,7 +349,6 @@ input::-webkit-inner-spin-button {
   height: 38px;
   padding: 0px 0px 0px 13px;
   border: 0px;
-  outline: none;
   background-color: var(--basic-gray-very-light);
   font: bold 14px/26px "PT Sans";
 }
@@ -397,7 +397,6 @@ input::-webkit-inner-spin-button {
   border: 0px;
   padding: 0px;
   margin: 0px;
-  outline: none;
   background-color: transparent;
   color: var(--basic-gray-light);
 }
@@ -416,7 +415,6 @@ input::-webkit-inner-spin-button {
   border: 0px;
   padding: 0px;
   margin: 0px;
-  outline: none;
   background-color: transparent;
 }
 .svg-change {
@@ -500,7 +498,6 @@ input::-webkit-inner-spin-button {
   border: 0px;
   padding: 0px;
   margin: 0px;
-  outline: none;
   background-color: var(--basic-gray-very-light);
 }
 .but-min {
@@ -526,7 +523,6 @@ input::-webkit-inner-spin-button {
   background-color: var(--basic-gray-very-light);
   border: 0px;
   padding: 0px;
-  outline: none;
   text-align: center;
   font:bold 14px/26px "PT Sans";
 }
@@ -546,7 +542,6 @@ input::-webkit-inner-spin-button {
   margin-top: 38px;
   padding: 0px;
   padding-left: 2px;
-  outline: none;
   font: 700 21px/26px "PT Sans";
   color: var(--basic-white);
   text-transform: uppercase;
@@ -585,6 +580,13 @@ input::-webkit-inner-spin-button {
 .footer-contacts p {
   margin: 0px;
   font: 700 21px/26px "PT Sans";
+  text-align: center;
+  vertical-align: middle;
+}
+.footer-contacts a {
+  margin: 0px;
+  font: 700 21px/26px "PT Sans";
+  color: var(--basic-black)
   text-align: center;
   vertical-align: middle;
 }
@@ -628,7 +630,7 @@ input::-webkit-inner-spin-button {
   background-color: var(--basic-blue-dark);
   color: rgba(255,255,255,0.3);
 }
-.social-button a:active path {
+.social-button path:only-of-type:active {
   fill: rgba(255,255,255,0.3);
 }
 .prod {
@@ -643,10 +645,10 @@ input::-webkit-inner-spin-button {
 .prod p {
   padding-right: 8px;
 }
-.prod a:hover path {
+.prod path:only-of-type:hover {
   fill: var(--basic-blue-light);
 }
-.prod a:active path {
+.prod path:only-of-type:active {
   fill: var(--basic-graylight-opal);
 }
 
@@ -745,6 +747,17 @@ input[type="checkbox"] {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+.filter-input-checkbox:disabled+label::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -39px;
+  width: 26px;
+  height: 23px;
+  background-image: url("../img/checkbox-disabled.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
 .filter-checkbox label {
   margin-left: 39px;
 }
@@ -791,7 +804,6 @@ input[type="checkbox"] {
   height: 32px;
   padding: 0px 0px 4px;
   margin: 0px 0px 0px 2px;
-  outline: none;
   border: none;
   background-color: transparent;
   font:400 14px/21px "PT Sans";
@@ -869,7 +881,6 @@ input[type="checkbox"] {
   margin-right: 12px;
   border: 2px solid #ffffff;
   border-radius: 2px;
-  outline: none;
   background-color: transparent;
   font:14px/21px "PT Sans";
   color: var(--basic-white);
@@ -945,13 +956,13 @@ input[type="checkbox"] {
   justify-content: space-between;
   align-self: center;
 }
-.sorting-button a:hover path {
+.sorting-button path:only-of-type:hover {
   fill: var(--basic-black);
 }
-.sorting-button a:active path{
+.sorting-button path:only-of-type:active{
   fill: var(--basic-blue-light);
 }
-.sorting-button a:visited path {
+.sorting-button path:only-of-type:visited {
   color: var( --basic-blue-light);
 }
 .hostels-list {
@@ -1090,7 +1101,7 @@ input[type="checkbox"] {
 .star {
   width: 18px;
   height: 17px;
-  background-image: url("../img/stars.png");
+  background-image: url("../img/star.svg");
   background-size: cover;
   margin-left: 6px;
 }
