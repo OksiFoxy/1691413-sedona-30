@@ -586,7 +586,7 @@ input::-webkit-inner-spin-button {
 .footer-contacts a {
   margin: 0px;
   font: 700 21px/26px "PT Sans";
-  color: var(--basic-black)
+  color: var(--basic-black);
   text-align: center;
   vertical-align: middle;
 }
